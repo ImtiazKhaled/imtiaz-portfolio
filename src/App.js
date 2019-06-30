@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Mainbody from './components/mainbody';
+import Sidebar from './components/sidebar';
+import { Typography, Row, Col, Layout, Menu, Icon } from 'antd';
+import { styles } from './styles/styles';
+const { Title } = Typography;
+const { Header, Content, Sider, Footer } = Layout;
+const { SubMenu } = Menu;
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Header style={styles.backGround}>
+        <Title>Imtiaz Mujtaba Khaled</Title>
+      </Header>
+      <Layout>
+        <Layout style={styles.backGround}>
+          <Row type="flex">
+            <Col styles={styles.backGround} span={22}>
+              <Mainbody />
+            </Col>
+            <Col span={2}>
+              <Sidebar />
+            </Col>
+          </Row>
+        </Layout>
+      </Layout>
+      <Footer style={styles.backGround}>Imtiaz Mujtaba Khaled ©2019</Footer>
+    </Layout>
   );
 }
-
 export default App;
