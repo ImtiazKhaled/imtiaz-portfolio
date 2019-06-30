@@ -36,4 +36,12 @@ export var styles = {
     sidebar: {
         textAlign: "right",
     },
+    logo: {
+        textAlign: 'center',
+        width: '100px',
+    },
+    projectTitle: {
+        fontSize: '2em',
+        color: '#383838',
+    }
 }
