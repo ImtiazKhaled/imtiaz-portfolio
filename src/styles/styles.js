@@ -1,27 +1,34 @@
 export var styles = {
-    navBarTitle: {
-        textAlign: 'center',
-    },
-    headerText: {
-        color: 'black',
-        fontSize: 200
-    },
     cardClosed: {
-        // height: '10em',
-        // width: '10em',
         padding: '1em',
-        backgroundColor: '#A9A9A9',
+        color: '#383838',
+        backgroundColor: '#909090',
     },
     cardOpen: {
-        // height: '10em',
-        // width: '10em',
         padding: '1em',
-        backgroundColor: '#C0C0C0',
+        color: '#383838',
+        backgroundColor: '#aeaeae',
     },
     cardDiv: {
-        // width: '10em',
+    
     },
     backGround: {
-        backgroundColor: '#D3D3D3',
+        backgroundColor: '#eeeeee',
+    },
+    creditLink: {
+        textDecoration: false,
+        color: '#eeeeee',
+        fontSize: '0.1em',
+    },
+    title: {
+        fontSize: '3em',
+        textAlign: 'center',
+        color: '#aeaeae'
+    },
+    footer: {
+        color: '#aeaeae',
+        fontSize: '1em',
+        textAlign: 'center',
+        backgroundColor: '#eeeeee',
     }
 }
