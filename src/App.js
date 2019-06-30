@@ -9,7 +9,7 @@ const { Header, Footer } = Layout;
 function App() {
   return (
     <Layout>
-      <Header style={styles.backGround}>
+      <Header style={styles.headerLayout}>
         <Title style={styles.title}>Imtiaz Mujtaba Khaled</Title>
       </Header>
       <BodyLayout />

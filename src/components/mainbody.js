@@ -1,24 +1,34 @@
 import React from 'react';
 import Hoverable from './toggleHover';
-import { OnAboutMeHover, OnAboutMeRelease } from './toggleAboutMe';
+import { Blank } from './blank';
+import { OnAboutHover, OnAboutRelease } from './toggleAbout';
 import { OnContactHover, OnContactRelease } from './toggleContact';
 import { OnProjectHover, OnProjectRelease } from './toggleProject';
 import { styles } from '../styles/styles';
+import { Row, Col, Card } from 'antd';
 
 export default class Mainbody extends React.Component {
-    state = { hovered: false };
+    state = { hoveredAbout: false, hoveredContact: false, hoveredContact: false, };
     render() {
         return (
             <div styles={styles.backGround}>
-                <Hoverable>
-                    {hovered => <div style={styles.cardDiv} >{hovered ? <OnAboutMeHover /> : <OnAboutMeRelease />}</div>}
-                </Hoverable>
-                <Hoverable>
-                    {hovered => <div>{hovered ? <OnProjectHover /> : <OnProjectRelease />}</div>}
-                </Hoverable>
-                <Hoverable>
-                    {hovered => <div>{hovered ? <OnContactHover /> : <OnContactRelease />}</div>}
-                </Hoverable>
+                <Row>
+                    <Col span={8}>
+                        <Hoverable>
+                            {hoveredAbout => <div>{hoveredAbout ? <OnAboutHover /> : <OnAboutRelease />}</div>}
+                        </Hoverable>
+                    </Col>
+                    <Col span={8}>
+                        <Hoverable>
+                            {hoveredProject => <div>{hoveredProject ? <OnProjectHover /> : <OnProjectRelease />}</div>}
+                        </Hoverable>
+                    </Col>
+                    <Col span={8}>
+                        <Hoverable>
+                            {hoveredContact => <div>{hoveredContact ? <OnContactHover /> : <OnContactRelease />}</div>}
+                        </Hoverable>
+                    </Col>
+                </Row>
             </div>
         );
     }

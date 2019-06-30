@@ -10,17 +10,17 @@ export default class Sidebar extends React.Component {
             <div style={{ alignItems: 'flex-end' }}>
                 <Row>
                     <Col span={24}>
-                        <a href="https://www.linkedin.com/in/imtiaz-mujtaba-khaled-47b887171/">
+                        <a title='LinkedIn Page' href="https://www.linkedin.com/in/imtiaz-mujtaba-khaled-47b887171/">
                             <img src={"https://img.icons8.com/ios/45/aeaeae/linkedin-filled.png"} alt="linkedin_link" />
                         </a>
                     </Col>
                     <Col span={24}>
-                        <a href="https://github.com/ImtiazKhaled">
+                        <a title='Github Page' href="https://github.com/ImtiazKhaled">
                         <img src={"https://img.icons8.com/ios-glyphs/45/aeaeae/github.png"} alt="github_link" />
                         </a>
                     </Col>
                     <Col span={24}>
-                        <a href="https://devpost.com/ImtiazMujtabaKhaled?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">
+                        <a title='Devpost Page' href="https://devpost.com/ImtiazMujtabaKhaled?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">
                         <img src={"https://img.icons8.com/material/45/aeaeae/devpost.png"} alt="devpost_link" />
                         </a>
                     </Col>

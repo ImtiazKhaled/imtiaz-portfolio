@@ -1,18 +1,20 @@
 export var styles = {
     cardClosed: {
-        padding: '1em',
         color: '#383838',
         backgroundColor: '#909090',
     },
     cardOpen: {
-        padding: '1em',
         color: '#383838',
         backgroundColor: '#aeaeae',
     },
     cardDiv: {
-    
+
     },
-    backGround: {
+    headerLayout: {
+        backgroundColor: '#eeeeee',
+    },
+    bodyLayout: {
+        padding: '0.5em',
         backgroundColor: '#eeeeee',
     },
     creditLink: {
@@ -30,5 +32,8 @@ export var styles = {
         fontSize: '1em',
         textAlign: 'center',
         backgroundColor: '#eeeeee',
-    }
+    },
+    sidebar: {
+        textAlign: "right",
+    },
 }

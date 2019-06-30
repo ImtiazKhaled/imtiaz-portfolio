@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'antd';
+import { Card, Col } from 'antd';
 import { styles } from '../styles/styles';
 
 
@@ -9,7 +9,10 @@ export class OnProjectHover extends React.Component {
     render() {
         return (
             <div>
-                <Card style={styles.cardOpen}> edunate, subbey, somemore </Card>
+                <Card style={styles.cardOpen}> Projects </Card>
+                <Col span={8}><Card style={styles.cardOpen}>edunate</Card></Col>
+                <Col span={8}><Card style={styles.cardOpen}>subbey</Card></Col>
+                <Col span={8}><Card style={styles.cardOpen}>fitnessApp</Card></Col>
             </div>
         );
     }

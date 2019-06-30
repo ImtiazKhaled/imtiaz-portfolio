@@ -9,12 +9,12 @@ export default class Bodylayout extends React.Component {
     state = { hovered: false };
     render() {
         return (
-            <Layout style={styles.backGround}>
+            <Layout style={styles.bodyLayout}>
                 <Row>
                     <Col span={22}>
                         <Mainbody />
                     </Col>
-                    <Col span={2}>
+                    <Col span={2} style={styles.sidebar}>
                         <Sidebar />
                     </Col>
                 </Row>
