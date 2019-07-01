@@ -18,7 +18,7 @@ export class OnProjectHover extends React.Component {
                             <Col span={10}>
                                 <img width='100%' styles={styles.logo} src={project.logo} ></img>
                             </Col>
-                            <Col span={10}>
+                            <Col style={{paddingLeft: '1em'}} span={10}>
                                 <Row>
                                     <Title style={styles.projectTitle}>{project.title}</Title>
                                 </Row>
@@ -27,15 +27,12 @@ export class OnProjectHover extends React.Component {
                                 </Row>
                                 <Row>
                                     <a href={project.sourceCode}><Tag color='#3D9970'>Source Code</Tag></a>
-                                    {/* <a href={project.websiteLink}><Tag>Website Link</Tag></a> */}
                                 </Row>
                             </Col>
                         </Row>
                         <Row> {project.description} </Row>
                     </Card></Col>
                 )}
-                {/* <Col span={8}><Card style={styles.cardOpen}>subbey</Card></Col>
-                <Col span={8}><Card style={styles.cardOpen}>fitnessApp</Card></Col> */}
             </div>
         );
     }

@@ -1,10 +1,12 @@
 export var styles = {
     cardClosed: {
         color: '#383838',
+        padding: '0em',
         backgroundColor: '#909090',
     },
     cardOpen: {
         color: '#383838',
+        padding: '0em',
         backgroundColor: '#aeaeae',
     },
     cardDiv: {
