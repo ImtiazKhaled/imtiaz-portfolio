@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import BodyLayout from './components/bodylayout';
-import HitCounter from './components/hitCounter';
+import BodyLayout from './components/layoutComponents/bodylayout';
+import HitCounter from './components/layoutComponents/hitCounter';
 import { Typography, Row, Col, Layout } from 'antd';
 import { styles } from './styles/styles';
 const { Title } = Typography;

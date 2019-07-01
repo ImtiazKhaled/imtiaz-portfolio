@@ -1,5 +1,5 @@
 import React from 'react';
-import { styles } from '../styles/styles';
+import { styles } from '../../styles/styles';
 import { Row, Col, Layout } from 'antd';
 import Mainbody from './mainbody';
 import Sidebar from './sidebar';

@@ -1,11 +1,9 @@
 import React from 'react';
-import { styles } from '../styles/styles';
-import { colorThemes } from '../styles/colorThemes';
+import { styles } from '../../styles/styles';
 import { Row, Col } from 'antd';
 
 
 export default class Sidebar extends React.Component {
-    state = { iconColor: colorThemes.headerFooter, };
     render() {
         return (
             <div style={{ alignItems: 'flex-end' }}>

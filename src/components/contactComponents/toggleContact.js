@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'antd';
-import { styles } from '../styles/styles';
+import { styles } from '../../styles/styles';
 
 
 

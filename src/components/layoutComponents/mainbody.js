@@ -1,22 +1,22 @@
 import React from 'react';
 import Hoverable from './toggleHover';
-import { OnAboutHover, OnAboutRelease } from './toggleAbout';
-import { OnContactHover, OnContactRelease } from './toggleContact';
-import { OnProjectHover, OnProjectRelease } from './toggleProject';
-import DetailsAbout from './details/detailsAbout';
-import DetailsProject from './details/detailsProject';
-import DetailsContact from './details/detailsContact';
-import DetailsBlank from './details/detailsBlank';
-import { styles } from '../styles/styles';
+import { OnAboutHover, OnAboutRelease } from '../aboutComponents/toggleAbout';
+import DetailsAbout from '../aboutComponents/detailsAbout';
+import { OnWorkHover, OnWorkRelease } from '../workComponents/toggleWork';
+import DetailsWork from '../workComponents/detailsWork';
+import { OnContactHover, OnContactRelease } from '../contactComponents/toggleContact';
+import DetailsContact from '../contactComponents/detailsContact';
+import DetailsBlank from './detailsBlank';
+import { styles } from '../../styles/styles';
 import { Row, Col } from 'antd';
 
 
 export default class Mainbody extends React.Component {
-    state = { hoveredAbout: false, hoveredProject: false, hoveredContact: false, hovered: false, };
+    state = { hoveredAbout: false, hoveredWork: false, hoveredContact: false, hovered: false, };
 
     onAboutClick = e => {
         this.setState({
-            hoveredProject: false,
+            hoveredWork: false,
             hoveredContact: false,
             hoveredAbout: !this.state.hoveredAbout
         })
@@ -26,13 +26,13 @@ export default class Mainbody extends React.Component {
         this.setState({
             hoveredAbout: false,
             hoveredContact: false,
-            hoveredProject: !this.state.hoveredProject
+            hoveredWork: !this.state.hoveredWork
         })
     }
 
     onContactClick = e => {
         this.setState({
-            hoveredProject: false,
+            hoveredWork: false,
             hoveredAbout: false,
             hoveredContact: !this.state.hoveredContact
         })
@@ -50,7 +50,7 @@ export default class Mainbody extends React.Component {
                     </Col>
                     <Col span={8}>
                         <Hoverable showDetails={this.onPorjectClick}>
-                            {hovered => <div>{hovered ? <OnProjectHover /> : <OnProjectRelease />}</div>}
+                            {hovered => <div>{hovered ? <OnWorkHover /> : <OnWorkRelease />}</div>}
                         </Hoverable>
                     </Col>
                     <Col span={8}>
@@ -62,8 +62,8 @@ export default class Mainbody extends React.Component {
                     {this.state.hoveredAbout ?
                         <DetailsAbout />
                         :
-                        this.state.hoveredProject ?
-                            <DetailsProject />
+                        this.state.hoveredWork ?
+                            <DetailsWork />
                             :
                             this.state.hoveredContact ?
                                 <DetailsContact />

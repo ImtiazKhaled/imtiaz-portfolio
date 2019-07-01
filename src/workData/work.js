@@ -2,7 +2,7 @@ import edunateLogo from '../assets/edunate_logo.png';
 import subbeyLogo from '../assets/subbey_logo.png';
 import fitnessLogo from '../assets/fitness_logo.png';
 
-export const projects = [
+export const work = [
     {
         id: "1",
         type: "Personal Project",

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col } from 'antd';
-import { Blank } from '../blank';
+import { Blank } from './blank';
 
 export default class DetailsContact extends React.Component {
     render() {

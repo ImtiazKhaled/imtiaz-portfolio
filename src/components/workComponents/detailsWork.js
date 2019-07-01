@@ -1,14 +1,14 @@
 import React from 'react';
 import { styles } from '../../styles/styles';
 import { Row, Col, Card, Tag, Typography } from 'antd';
-import { projects } from '../../projectsData/projects';
+import { work } from '../../workData/work';
 const { Title } = Typography;
 
 export default class DetailsProject extends React.Component {
     render() {
         return (
             <div>
-                {projects.map(project =>
+                {work.map(project =>
                     <Col span={8}><Card key={project.id} style={styles.cardOpen}>
                         <Row> <Tag color='#001f3f'> {project.type} </Tag> </Row>
                         <Row>
