@@ -1,9 +1,6 @@
 import React from 'react';
 import MainPage from './mainPage';
-import LandingPage from './landingPage';
-import { styles } from '../../styles/styles';
-
-
+import LandingPageResponsive from '../landingPage/landingPageResponsive';
 
 export default class Index extends React.Component {
     state = { viewMain: false };
@@ -13,10 +10,10 @@ export default class Index extends React.Component {
             viewMain: true
         })
     }
-
+    
     render() {
         return (
-            <div onClick={this.showPage}> { this.state.viewMain ? <MainPage /> : <LandingPage  /> } </div>
+            <div onClick={this.showPage}> { this.state.viewMain ? <MainPage /> : <LandingPageResponsive/> } </div>
         );
     }
 }

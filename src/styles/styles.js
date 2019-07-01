@@ -35,7 +35,8 @@ export var styles = {
     },
     footer: {
         height: '10vh',
-        position: 'sticky',
+        width: '100vw',
+        position: 'fixed',
         bottom: '0',
         color: colorThemes.headerFooter,
         fontSize: '1em',
@@ -56,14 +57,5 @@ export var styles = {
     hitCounter: {
         backgroundColor: colorThemes.pageBackground,
         color: colorThemes.headerFooter,
-    },
-    landingPage: {
-        height: '90vh',
-        backgroundColor: colorThemes.pageBackground,
-    },
-    landingTitle: {
-        fontSize: '15vh',
-        textAlign: 'center',
-        color: colorThemes.headerFooter
     },
 }
