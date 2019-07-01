@@ -1,39 +1,43 @@
+import { colorThemes } from './colorThemes';
+
 export var styles = {
     cardClosed: {
-        color: '#383838',
+        color: colorThemes.cardTextColor,
         padding: '0em',
-        backgroundColor: '#909090',
+        backgroundColor: colorThemes.closedCardColor,
     },
     cardOpen: {
-        color: '#383838',
+        color: colorThemes.cardTextColor,
         padding: '0em',
-        backgroundColor: '#aeaeae',
+        backgroundColor: colorThemes.headerFooter,
     },
     cardDiv: {
 
     },
     headerLayout: {
-        backgroundColor: '#eeeeee',
+        backgroundColor: colorThemes.pageBackground,
     },
     bodyLayout: {
         padding: '0.5em',
-        backgroundColor: '#eeeeee',
+        backgroundColor: colorThemes.pageBackground,
     },
     creditLink: {
         textDecoration: false,
-        color: '#eeeeee',
+        color: colorThemes.pageBackground,
         fontSize: '0.1em',
     },
     title: {
         fontSize: '3em',
         textAlign: 'center',
-        color: '#aeaeae'
+        color: colorThemes.headerFooter
     },
     footer: {
-        color: '#aeaeae',
+        position: 'sticky',
+        bottom: '0',
+        color: colorThemes.headerFooter,
         fontSize: '1em',
         textAlign: 'center',
-        backgroundColor: '#eeeeee',
+        backgroundColor: colorThemes.pageBackground,
     },
     sidebar: {
         textAlign: "right",
@@ -44,6 +48,10 @@ export var styles = {
     },
     projectTitle: {
         fontSize: '2em',
-        color: '#383838',
+        color: colorThemes.cardTextColor,
+    },
+    hitCounter: {
+        backgroundColor: colorThemes.pageBackground,
+        color: colorThemes.headerFooter,
     }
 }

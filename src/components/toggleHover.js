@@ -3,7 +3,8 @@ import React from 'react';
 export default class Hoverable extends React.Component {
     state = { hovered: false };
 
-    mouseEnter = e => {
+    inverseState = e => {
+        this.props.showDetails()
         this.setState({
             hovered: !this.state.hovered
         })
@@ -11,7 +12,7 @@ export default class Hoverable extends React.Component {
 
     render() {
         return (
-            <div onClick={this.mouseEnter}>
+            <div onClick={this.inverseState}>
                 {this.props.children(this.state.hovered)}
             </div>
         );
