@@ -15,9 +15,11 @@ export var styles = {
 
     },
     headerLayout: {
+        height: '10vh',
         backgroundColor: colorThemes.pageBackground,
     },
     bodyLayout: {
+        height: '80vh',
         padding: '0.5em',
         backgroundColor: colorThemes.pageBackground,
     },
@@ -32,6 +34,7 @@ export var styles = {
         color: colorThemes.headerFooter
     },
     footer: {
+        height: '10vh',
         position: 'sticky',
         bottom: '0',
         color: colorThemes.headerFooter,
@@ -53,5 +56,14 @@ export var styles = {
     hitCounter: {
         backgroundColor: colorThemes.pageBackground,
         color: colorThemes.headerFooter,
-    }
+    },
+    landingPage: {
+        height: '90vh',
+        backgroundColor: colorThemes.pageBackground,
+    },
+    landingTitle: {
+        fontSize: '15vh',
+        textAlign: 'center',
+        color: colorThemes.headerFooter
+    },
 }

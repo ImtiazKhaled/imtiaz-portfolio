@@ -12,7 +12,7 @@ import { Row, Col } from 'antd';
 
 
 export default class Mainbody extends React.Component {
-    state = { hoveredAbout: false, hoveredWork: false, hoveredContact: false, hovered: false, };
+    state = { hoveredAbout: false, hoveredWork: false, hoveredContact: false, hovered: false };
 
     onAboutClick = e => {
         this.setState({

@@ -20,7 +20,7 @@ export const work = [
         title: 'subbey',
         sourceCode: 'https://github.com/ImtiazKhaled/edunate',
         websiteLink: 'http://www.edunate.org/',
-        description: 'The platform allows you to micro-donate to students for their academic needs, help others by tutoring for classes and other essential tools needed in the industry and exchange expensive commodities like textbooks, electronics etc or even post something you need!',
+        description: 'A subscription manager app that helps put into prespective how much is spend on subscriptions daily, weekly, monthly and yearly',
         stack: ['flutter'],
     },
     {
