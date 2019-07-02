@@ -5,10 +5,15 @@ import { styles } from '../../styles/landingPageStyles';
 import LandingSidebar from './landingSidebar';
 import Breakpoint from 'react-socks';
 import { LandingXSmall, LandingSmall, LandingMed, LandingLarge, LandingXLarge } from './landingPages';
-import { MenuButton } from '../menuButton/menuButton'; 
+import { MenuButton } from '../menuButton/menuButton';
+import WOW from 'wowjs';
 
 
 export default class LandingPageResponsive extends React.Component {
+    componentDidMount() {
+        new WOW.WOW().init();
+    }
+
     render() {
         return (
             <Layout>

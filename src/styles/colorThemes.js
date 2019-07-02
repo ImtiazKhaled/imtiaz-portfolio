@@ -17,7 +17,7 @@ export var colorThemes = {
     whoBackgroundMid: '#fe59c2',
     whoBackgroundDark: '#fe0da6',
     whoDetailsTitle: '#faed27',
-    whoeDetialsText: 'black'
+    whoDetialsText: 'white',
     
 }
 
