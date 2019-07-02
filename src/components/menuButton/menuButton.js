@@ -26,14 +26,13 @@ export class MenuButton extends React.Component {
         return (
             <div>
                 <Affix offsetTop={20} style={styles.menuButtonLanding} >
-                    <Button type='primary' shape='circle' icon='menu' size='large' onClick={this.openMenu} />
+                    <Button style={{color: 'white'}} type='link' shape='circle' icon='menu' size='large' onClick={this.openMenu} />
                 </Affix>
                 <Modal
                     centered
                     visible={this.state.visible}
                     onCancel={this.handleCancel}
                     footer={null}
-                    style={{ alignContent: 'center' }}
                 >
                     <Row>
                         <Text onHover={styles.menuOptionSelected} style={styles.menuOptions}>Intro</Text>

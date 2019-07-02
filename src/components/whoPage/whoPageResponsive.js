@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Row, Col, Layout } from 'antd';
 import { Who } from './whoPages';
-import { styles } from '../../styles/landingPageStyles';
+import { styles } from '../../styles/whoPageStyles';
 import { MenuButton } from '../menuButton/menuButton';
 // import { LandingSidebar, LandingSidebarSmall, LandingSidebarXSmall } from './landingSidebar';
 const { Title } = Typography;

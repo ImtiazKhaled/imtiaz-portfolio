@@ -11,4 +11,15 @@ export var colorThemes = {
     landingBackground: '#59fe95',
     landingHeaderFooter: '#0E1717',
     landingBackgroundDark: '#0dfe64',
+
+    whoBackground: '#fe59c2',
+    whoHeaderFooter: '#faed27',
+    whoBackgroundMid: '#fe59c2',
+    whoBackgroundDark: '#fe0da6',
+    whoDetailsTitle: '#faed27',
+    whoeDetialsText: 'black'
+    
 }
+
+
+ 
