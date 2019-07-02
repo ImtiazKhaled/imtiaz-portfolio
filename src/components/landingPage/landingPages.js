@@ -12,7 +12,7 @@ export class LandingXSmall extends React.Component {
             <div>
                 <Row style={styles.landingHeaderXSmall}>
                     <Header style={styles.landingPageXSmall}>
-                        <Title style={styles.landingTitleXSmall}>Hi i'm Imtiaz, a pasionate student web developer and this is my website</Title>
+                        <Title style={styles.landingTitleXSmall}>Hi i'm Imtiaz, a pasionate student web developer</Title>
                     </Header>
                 </Row>
                 <Row style={styles.landingSidebarXSmall}>
@@ -32,7 +32,7 @@ export class LandingSmall extends React.Component {
             <div>
                 <Row style={styles.landingHeaderSmall}>
                     <Header style={styles.landingPageSmall}>
-                        <Title style={styles.landingTitleSmall}>Hi i'm Imtiaz, a pasionate student web developer and this is my website</Title>
+                        <Title style={styles.landingTitleSmall}>Hi i'm Imtiaz, a pasionate student web developer</Title>
                     </Header>
                 </Row>
                 {/* <Row style={styles.landingSidebarSmall}>
@@ -55,7 +55,7 @@ export class LandingMed extends React.Component {
                 <Row>
                     <Col span={22} style={styles.landingCol}>
                         <Header style={styles.landingPage}>
-                            <Title style={styles.landingTitleMedium}>Hi i'm Imtiaz, a pasionate student web developer and this is my website</Title>
+                            <Title style={styles.landingTitleMedium}>Hi i'm Imtiaz, a pasionate student web developer</Title>
                         </Header>
                     </Col>
                     <Col span={2} style={styles.landingSidebar}>
@@ -77,7 +77,7 @@ export class LandingLarge extends React.Component {
                 <Row align="bottom">
                     <Col span={22} style={styles.landingCol}>
                         <Header style={styles.landingPage}>
-                            <Title style={styles.landingTitleLarge}>Hi i'm Imtiaz, a pasionate student web developer and this is my website</Title>
+                            <Title style={styles.landingTitleLarge}>Hi i'm Imtiaz, a pasionate student web developer</Title>
                         </Header>
                     </Col>
                     <Col span={2} style={styles.landingSidebar}>
@@ -99,7 +99,7 @@ export class LandingXLarge extends React.Component {
                 <Row align="bottom">
                     <Col span={22} style={styles.landingCol}>
                         <Header style={styles.landingPage}>
-                            <Title style={styles.landingTitleXLarge}>Hi i'm Imtiaz, a pasionate student web developer and this is my website</Title>
+                            <Title style={styles.landingTitleXLarge}>Hi i'm Imtiaz, a pasionate student web developer</Title>
                         </Header>
                     </Col>
                     <Col span={2} style={styles.landingSidebar}>

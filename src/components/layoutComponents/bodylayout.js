@@ -11,7 +11,7 @@ export default class Bodylayout extends React.Component {
         return (
             <Layout style={styles.bodyLayout}>
                 <Row>
-                    <Col span={22}>
+                    <Col styles={{backgroundCOlor: 'blue'}} span={22}>
                         <Mainbody />
                     </Col>
                     <Col span={2} style={styles.sidebar}>
