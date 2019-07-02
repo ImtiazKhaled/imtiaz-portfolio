@@ -4,7 +4,7 @@ import { Typography, Row, Col, Layout } from 'antd';
 import { styles } from '../../styles/landingPageStyles';
 import LandingSidebar from './landingSidebar';
 import Breakpoint from 'react-socks';
-import { LandingSmall, LandingMed, LandingLarge, LandingXLarge } from './landingPages';
+import { LandingXSmall, LandingSmall, LandingMed, LandingLarge, LandingXLarge } from './landingPages';
 
 
 export default class LandingPageResponsive extends React.Component {
@@ -12,7 +12,7 @@ export default class LandingPageResponsive extends React.Component {
         return (
             <Layout>
                 <Breakpoint xsmall only>
-                    <LandingSmall />
+                    <LandingXSmall />
                 </Breakpoint>
                 <Breakpoint small only>
                     <LandingSmall />

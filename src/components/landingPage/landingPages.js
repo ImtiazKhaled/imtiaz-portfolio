@@ -1,22 +1,23 @@
 import React from 'react';
 import { Typography, Row, Col, Layout } from 'antd';
 import { styles } from '../../styles/landingPageStyles';
-import { LandingSidebar, LandingSidebarSmall }  from './landingSidebar';
+import { LandingSidebar, LandingSidebarSmall, LandingSidebarXSmall } from './landingSidebar';
 const { Title } = Typography;
 const { Header, Footer } = Layout;
 
-export class LandingSmall extends React.Component {
+
+export class LandingXSmall extends React.Component {
     render() {
         return (
             <div>
-                    <Row style={styles.landingHeaderSmall}>
-                        <Header style={styles.landingPageSmall}>
-                            <Title style={styles.landingTitleSmall}>Hi i'm Imtiaz, a pasionate student web developer and this is my website</Title>
-                        </Header>
-                    </Row>
-                    <Row style={styles.landingSidebarSmall}>
-                        <LandingSidebarSmall/>
-                    </Row>
+                <Row style={styles.landingHeaderXSmall}>
+                    <Header style={styles.landingPageXSmall}>
+                        <Title style={styles.landingTitleXSmall}>Hi i'm Imtiaz, a pasionate student web developer and this is my website</Title>
+                    </Header>
+                </Row>
+                <Row style={styles.landingSidebarXSmall}>
+                    <LandingSidebarXSmall />
+                </Row>
                 <Row>
                     <Footer style={styles.landingFooter}>Imtiaz Mujtaba Khaled ©2019</Footer>
                 </Row>
@@ -25,6 +26,27 @@ export class LandingSmall extends React.Component {
     }
 }
 
+export class LandingSmall extends React.Component {
+    render() {
+        return (
+            <div>
+                <Row style={styles.landingHeaderSmall}>
+                    <Header style={styles.landingPageSmall}>
+                        <Title style={styles.landingTitleSmall}>Hi i'm Imtiaz, a pasionate student web developer and this is my website</Title>
+                    </Header>
+                </Row>
+                {/* <Row style={styles.landingSidebarSmall}>
+                </Row> */}
+                <Row>
+                    <Footer style={styles.landingFooterSmall}>
+                        <LandingSidebarSmall />
+                        Imtiaz Mujtaba Khaled ©2019
+                        </Footer>
+                </Row>
+            </div>
+        );
+    }
+}
 
 export class LandingMed extends React.Component {
     render() {
