@@ -3,6 +3,7 @@ import WorkPageResponsive from '../workPage/workPageResponsive';
 import MainPage from './mainPage';
 import LandingPageResponsive from '../landingPage/landingPageResponsive';
 import WhoPageResponsive from '../whoPage/whoPageResponsive';
+import ContactPageResponsive from '../contactPage/contactPageResponsive';
 
 export default class Index extends React.Component {
     state = { viewMain: false };
@@ -12,13 +13,15 @@ export default class Index extends React.Component {
             viewMain: true
         })
     }
-    
+
     render() {
         return (
             // <div onClick={this.showPage}> { this.state.viewMain ? <MainPage /> : <LandingPageResponsive/> } </div>
-            // <LandingPageResponsive/>
-            // <WhoPageResponsive />
-            <WorkPageResponsive />
+                // <LandingPageResponsive />
+                // <WhoPageResponsive />
+                // <WorkPageResponsive />
+                <ContactPageResponsive />
+
         );
     }
 }

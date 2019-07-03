@@ -26,6 +26,13 @@ export var colorThemes = {
     workDetailsTitle: '#faed27',
     workDetialsText: 'white',
 
+    contactBackground: '#40e5e4',
+    contactHeaderFooter: 'purple',
+    contactBackgroundMid: '#00cccc',
+    contactBackgroundDark: '#00c0c0',
+    contactDetailsTitle: '#faed27',
+    contactDetialsText: 'white',
+
     // whoBackground: '#279fde',
     // whoHeaderFooter: '#faed27',
     // whoBackgroundMid: '#2762de',
