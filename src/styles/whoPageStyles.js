@@ -17,7 +17,7 @@ export var styles = {
         textAlign: 'center',
     },
     whoPageS: {
-        background: 'linear-gradient(to bottom, ' + colorThemes.whoBackgroundMid + ', ' + colorThemes.whoBackground,
+        background: 'linear-gradient(to bottom, ' + colorThemes.whoBackground + ', ' + colorThemes.whoBackgroundMid,
     },
     whoPageDetailsS: {//edited
         height: '90vh',

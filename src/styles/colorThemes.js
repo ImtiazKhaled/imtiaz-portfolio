@@ -18,8 +18,14 @@ export var colorThemes = {
     whoBackgroundDark: '#fe0da6',
     whoDetailsTitle: '#faed27',
     whoDetialsText: 'white',
-    
+
+    // whoBackground: '#279fde',
+    // whoHeaderFooter: '#faed27',
+    // whoBackgroundMid: '#2762de',
+    // whoBackgroundDark: '#2743de',
+    // whoDetailsTitle: '#faed27',
+    // whoDetialsText: 'white',
 }
 
 
- 
+

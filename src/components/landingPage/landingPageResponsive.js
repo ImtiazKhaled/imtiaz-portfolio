@@ -7,6 +7,7 @@ import Breakpoint from 'react-socks';
 import { LandingXSmall, LandingSmall, LandingMed, LandingLarge, LandingXLarge } from './landingPages';
 import { MenuButton } from '../menuButton/menuButton';
 import WOW from 'wowjs';
+import { colorThemes } from '../../styles/colorThemes';
 
 
 export default class LandingPageResponsive extends React.Component {
@@ -17,7 +18,7 @@ export default class LandingPageResponsive extends React.Component {
     render() {
         return (
             <Layout>
-                <MenuButton />
+                <MenuButton  color={colorThemes.landingHeaderFooter} title='home' />
                 <Breakpoint xsmall only>
                     <LandingXSmall />
                 </Breakpoint>

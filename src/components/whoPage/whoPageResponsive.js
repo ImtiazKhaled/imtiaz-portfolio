@@ -2,9 +2,10 @@ import React from 'react';
 import { Typography, Row, Col, Layout } from 'antd';
 import { Who } from './whoPages';
 import { styles } from '../../styles/whoPageStyles';
-import { MenuButton } from '../menuButton/menuButton';
 import { WhoXSmall, WhoSmall, WhoMed, WhoLarge, WhoXLarge } from './whoPages';
 import Breakpoint from 'react-socks';
+import { MenuButton } from '../menuButton/menuButton'
+import { colorThemes } from '../../styles/colorThemes';
 const { Title } = Typography;
 const { Header, Footer } = Layout;
 
@@ -13,7 +14,7 @@ export default class WhoPageResponsive extends React.Component {
     render() {
         return (
             <Layout>
-                <MenuButton />
+                <MenuButton color={colorThemes.whoHeaderFooter} title={'who'} />
                 <Breakpoint xsmall only>
                     <WhoXSmall />
                 </Breakpoint>
