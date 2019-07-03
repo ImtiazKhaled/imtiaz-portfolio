@@ -19,6 +19,13 @@ export var colorThemes = {
     whoDetailsTitle: '#faed27',
     whoDetialsText: 'white',
 
+    workBackground: '#e60000',
+    workHeaderFooter: 'pink',
+    workBackgroundMid: '#990000',
+    workBackgroundDark: '#800000',
+    workDetailsTitle: '#faed27',
+    workDetialsText: 'white',
+
     // whoBackground: '#279fde',
     // whoHeaderFooter: '#faed27',
     // whoBackgroundMid: '#2762de',

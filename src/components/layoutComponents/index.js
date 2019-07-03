@@ -1,4 +1,5 @@
 import React from 'react';
+import WorkPageResponsive from '../workPage/workPageResponsive';
 import MainPage from './mainPage';
 import LandingPageResponsive from '../landingPage/landingPageResponsive';
 import WhoPageResponsive from '../whoPage/whoPageResponsive';
@@ -16,7 +17,8 @@ export default class Index extends React.Component {
         return (
             // <div onClick={this.showPage}> { this.state.viewMain ? <MainPage /> : <LandingPageResponsive/> } </div>
             // <LandingPageResponsive/>
-            <WhoPageResponsive />
+            // <WhoPageResponsive />
+            <WorkPageResponsive />
         );
     }
 }
