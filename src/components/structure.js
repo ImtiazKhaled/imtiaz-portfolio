@@ -3,7 +3,8 @@ import { Typography, Row, Col, Layout, Button, Divider } from 'antd';
 import { styles } from '../styles/styles';
 import WOW from 'wowjs';
 import { Landing } from './landingPage';
-import { Demo } from './whoPage';
+import { Who } from './whoPage';
+import { Work } from './workPage';
 const { Title, Text } = Typography;
 const { Header, Footer } = Layout;
 
@@ -17,7 +18,8 @@ export class Structure extends React.Component {
             <div>
                 <Row style={styles.Page}>
                    <Landing />
-                    <Demo />
+                    <Who />
+                    <Work />
                 </Row>
                 <Row>
                     <Footer style={styles.Footer}>Imtiaz Mujtaba Khaled ©2019</Footer>

@@ -32,6 +32,7 @@ export var colorThemes = {
     BackgroundDark: '#00c0c0',
     DetailsTitle: 'purple',
     DetialsText: 'white',
+    WhoDate: 'grey',
 
 }
 

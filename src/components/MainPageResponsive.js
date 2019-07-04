@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, Row, Col, Layout } from 'antd';
-import { styles } from '../styles/workPageStyles'
+// import { styles } from '../styles/workPageStyles'
 import Breakpoint from 'react-socks';
 import { Work, Structure } from './structure';
 import { colorThemes } from '../styles/colorThemes';

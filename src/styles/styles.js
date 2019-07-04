@@ -2,16 +2,13 @@ import { colorThemes } from './colorThemes';
 
 export var styles = {
     Landing: {
-        height: '105vh',
+        height: '100vh',
         paddingTop: '10vh',
         paddingRight: '10vw',
         textAlign: 'right',
     },
     Page: {
         background: 'linear-gradient(to bottom, ' + colorThemes.BackgroundDark + ', ' + colorThemes.Background,
-    },
-    PageDetails: {
-        height: '70vh',
     },
     Title: {
         fontSize: '3vw',
@@ -28,6 +25,16 @@ export var styles = {
         color: colorThemes.HeaderFooter,
         fontFamily: 'Play, sans-serif',
     },
+    SubtitleThree: {
+        fontSize: '1.5vw',
+        color: colorThemes.DetialsText,
+        fontFamily: 'Play, sans-serif',
+    },
+    SubtitleFour: {
+        fontSize: '1vw',
+        color: colorThemes.WhoDate,
+        fontFamily: 'Play, sans-serif',
+    },
     ContactMeButton: {
         margin: '1vw',
         fontSize: '1.5vw',
@@ -35,22 +42,10 @@ export var styles = {
         fontFamily: 'Play, sans-serif',
     },
     WhoMain: {
-        height: '90vh',
-        // paddingTop: '10vh',
-        // paddingRight: '10vw',
-        // textAlign: 'right',
+        height: '100vh',
     },
-    Details: {
-        fontSize: '7vw',
-        color: colorThemes.DetailsTitle,
-    },
-    DetailsSub: {
-        fontSize: '3vw',
-        color: colorThemes.DetailsTitle,
-    },
-    DetailsText: {
-        fontSize: '1.2vw',
-        color: colorThemes.DetialsText,
+    WhoTab: {
+        color: 'black',
     },
     Footer: {
         height: '10vh',
@@ -61,19 +56,5 @@ export var styles = {
         fontSize: '1em',
         textAlign: 'center',
         backgroundColor: colorThemes.Background,
-    },
-    DetialsImageFirst: {
-        width: '50%',
-        marginTop: '10vh',
-        marginLeft: '10vw',
-        borderRadius: '30px',
-        boxShadow: '5px 5px',
-    },
-    DetialsImage: {
-        width: '50%',
-        marginTop: '30vh',
-        marginLeft: '15vw',
-        borderRadius: '30px',
-        boxShadow: '5px 5px',
     },
 }

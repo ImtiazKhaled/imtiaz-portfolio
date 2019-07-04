@@ -1,9 +1,11 @@
 import React from 'react';
 import { Tabs, Divider } from 'antd';
 import { styles } from '../styles/styles';
+import { WhoDetails } from './whoDetails';
+import { who } from '../data/who';
 const TabPane = Tabs.TabPane;
 
-export class Demo extends React.Component {
+export class Who extends React.Component {
     render() {
         return (
             <div style={styles.WhoMain}>
@@ -12,11 +14,12 @@ export class Demo extends React.Component {
                         Who
                     </div>
                 </Divider>
-                <Tabs tabPosition={'left'}>
-                    <TabPane tab="Student" key="1"> Content of Tab 1</TabPane>
-                    <TabPane tab="Intern Software Engineer" key="2">Content of Tab 2</TabPane>
-                    <TabPane tab="and many more.." key="3">Content of Tab 3</TabPane>
+                <Tabs style={styles.WhoTab} tabPosition={'left'}>
+                    {who.map(who =>
+                        <TabPane tab={who.tabName} key={who.id}> <WhoDetails data={who.props} /> </TabPane>
+                    )}
                 </Tabs>
+
             </div>
         );
     }

@@ -3,7 +3,7 @@ import './App.css';
 import  WorkPageResponsive  from './components/MainPageResponsive';
 // import Index from './components/layoutComponents/index';
 import Breakpoint, { BreakpointProvider } from 'react-socks';
-import { styles } from './styles/whoPageStyles';
+// import { styles } from './styles/whoPageStyles';
 
 function App() {
   return (
