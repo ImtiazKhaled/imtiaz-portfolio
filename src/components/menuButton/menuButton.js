@@ -2,6 +2,7 @@ import React from 'react';
 import { Affix, Button, Modal, Typography, Row } from 'antd';
 import { styles } from '../../styles/menuButtonStyles';
 import WOW from 'wowjs';
+import { Link } from 'react-router-dom';
 const { Text } = Typography;
 
 
@@ -46,16 +47,16 @@ export class MenuButton extends React.Component {
                         {this.props.worked}
                     </text>
                     <Row>
-                        <Text onHover={styles.menuOptionSelected} style={styles.menuOptions}>Intro</Text>
+                        <Link to='/' style={styles.menuOptions}>Intro</Link>
                     </Row>
                     <Row>
-                        <Text style={styles.menuOptions}>Who</Text>
+                        <Link to='/who' style={styles.menuOptions}>Who</Link>
                     </Row>
                     <Row>
-                        <Text style={styles.menuOptions}>Work</Text>
+                        <Link to='/work' style={styles.menuOptions}>Work</Link>
                     </Row>
                     <Row>
-                        <Text style={styles.menuOptions}>Contact</Text>
+                        <Link to='/contact' style={styles.menuOptions}>Contact</Link>
                     </Row>
                 </Modal>
             </div>
