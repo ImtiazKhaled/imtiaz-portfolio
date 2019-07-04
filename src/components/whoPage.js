@@ -8,7 +8,7 @@ const TabPane = Tabs.TabPane;
 export class Who extends React.Component {
     render() {
         return (
-            <div style={styles.WhoMain}>
+            <div style={styles.MainPage}>
                 <Divider orientation="left">
                     <div style={styles.Subtitle}>
                         Who

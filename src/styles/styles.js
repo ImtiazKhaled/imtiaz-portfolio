@@ -41,11 +41,31 @@ export var styles = {
         color: colorThemes.HeaderFooter,
         fontFamily: 'Play, sans-serif',
     },
-    WhoMain: {
-        height: '100vh',
+    MainPage: {
+        minHeight: '100vh',
     },
     WhoTab: {
         color: 'black',
+    },
+    WorkCardContainer: {
+        margin: '2vw',
+    },
+    WorkIcon: {
+        fontSize: '5vw',
+    },
+    WorkTitle: {
+        fontSize: '2vw',
+        fontFamily: 'Play, sans-serif',
+    },
+    WorkSocialLink: {
+        fontSize: '2vw',
+    },
+    WorkTags: {
+        fontFamily: 'Play, sans-serif',
+    },
+    WorkDetails: {
+        fontFamily: 'Play, sans-serif',
+        fontSize: '1vw',
     },
     Footer: {
         height: '10vh',
