@@ -1,61 +1,79 @@
 import { colorThemes } from './colorThemes';
 
 export var styles = {
-    cardClosed: {
-        color: colorThemes.cardTextColor,
-        padding: '0em',
-        backgroundColor: colorThemes.closedCardColor,
+    Landing: {
+        height: '105vh',
+        paddingTop: '10vh',
+        paddingRight: '10vw',
+        textAlign: 'right',
     },
-    cardOpen: {
-        color: colorThemes.cardTextColor,
-        padding: '0em',
-        backgroundColor: colorThemes.headerFooter,
+    Page: {
+        background: 'linear-gradient(to bottom, ' + colorThemes.BackgroundDark + ', ' + colorThemes.Background,
     },
-    cardDiv: {
-
+    PageDetails: {
+        height: '70vh',
     },
-    headerLayout: {
-        height: '10vh',
-        backgroundColor: colorThemes.pageBackground,
+    Title: {
+        fontSize: '3vw',
+        color: colorThemes.HeaderFooter,
+        fontFamily: 'Play, sans-serif',
     },
-    bodyLayout: {
-        height: '80vh',
-        padding: '0.5em',
-        backgroundColor: colorThemes.pageBackground,
+    Subtitle: {
+        fontSize: '2vw',
+        color: colorThemes.HeaderFooter,
+        fontFamily: 'Play, sans-serif',
     },
-    creditLink: {
-        textDecoration: false,
-        color: colorThemes.pageBackground,
-        fontSize: '0.1em',
+    SubtitleTwo: {
+        fontSize: '1.5vw',
+        color: colorThemes.HeaderFooter,
+        fontFamily: 'Play, sans-serif',
     },
-    title: {
-        fontSize: '3em',
-        textAlign: 'center',
-        color: colorThemes.headerFooter
+    ContactMeButton: {
+        margin: '1vw',
+        fontSize: '1.5vw',
+        color: colorThemes.HeaderFooter,
+        fontFamily: 'Play, sans-serif',
     },
-    footer: {
+    WhoMain: {
+        height: '90vh',
+        // paddingTop: '10vh',
+        // paddingRight: '10vw',
+        // textAlign: 'right',
+    },
+    Details: {
+        fontSize: '7vw',
+        color: colorThemes.DetailsTitle,
+    },
+    DetailsSub: {
+        fontSize: '3vw',
+        color: colorThemes.DetailsTitle,
+    },
+    DetailsText: {
+        fontSize: '1.2vw',
+        color: colorThemes.DetialsText,
+    },
+    Footer: {
         height: '10vh',
         width: '100vw',
-        position: 'fixed',
+        position: 'sticky',
         bottom: '0',
-        color: colorThemes.headerFooter,
+        color: colorThemes.HeaderFooter,
         fontSize: '1em',
         textAlign: 'center',
-        backgroundColor: colorThemes.pageBackground,
+        backgroundColor: colorThemes.Background,
     },
-    sidebar: {
-        textAlign: "right",
+    DetialsImageFirst: {
+        width: '50%',
+        marginTop: '10vh',
+        marginLeft: '10vw',
+        borderRadius: '30px',
+        boxShadow: '5px 5px',
     },
-    logo: {
-        textAlign: 'center',
-        width: '100px',
-    },
-    projectTitle: {
-        fontSize: '2em',
-        color: colorThemes.cardTextColor,
-    },
-    hitCounter: {
-        backgroundColor: colorThemes.pageBackground,
-        color: colorThemes.headerFooter,
+    DetialsImage: {
+        width: '50%',
+        marginTop: '30vh',
+        marginLeft: '15vw',
+        borderRadius: '30px',
+        boxShadow: '5px 5px',
     },
 }

@@ -1,19 +1,18 @@
 import React from 'react';
 import { Typography, Row, Col, Layout } from 'antd';
-import { styles } from '../../styles/workPageStyles'
+import { styles } from '../styles/workPageStyles'
 import Breakpoint from 'react-socks';
-import { Work } from '../workPage/workPages';
-import { MenuButton } from '../menuButton/menuButton'
-import { colorThemes } from '../../styles/colorThemes';
+import { Work, Structure } from './structure';
+import { colorThemes } from '../styles/colorThemes';
 const { Title } = Typography;
 const { Header, Footer } = Layout;
 
 
-export default class WhoPageResponsive extends React.Component {
+export default class WorkPageResponsive extends React.Component {
     render() {
         return (
             <Layout>
-                <MenuButton color={colorThemes.workHeaderFooter} title={'work'} />
+                {/* <MenuButton color={colorThemes.workHeaderFooter} title={'work'} /> */}
                 {/* <Breakpoint xsmall only>
                     <WhoXSmall />
                 </Breakpoint>
@@ -27,7 +26,7 @@ export default class WhoPageResponsive extends React.Component {
                     <WhoLarge />
                 </Breakpoint>
                 <Breakpoint xlarge only> */}
-                    <Work />
+                    <Structure />
                 {/* </Breakpoint> */}
             </Layout>
         );
