@@ -5,6 +5,7 @@ import WOW from 'wowjs';
 import { Landing } from './landingPage';
 import { Who } from './whoPage';
 import { Work } from './workPage';
+import { Contact } from './contactPage';
 const { Title, Text } = Typography;
 const { Header, Footer } = Layout;
 
@@ -17,9 +18,10 @@ export class Structure extends React.Component {
         return (
             <div>
                 <Row style={styles.Page}>
-                   <Landing />
+                    <Landing />
                     <Who />
                     <Work />
+                    <Contact />
                 </Row>
                 <Row>
                     <Footer style={styles.Footer}>Imtiaz Mujtaba Khaled ©2019</Footer>

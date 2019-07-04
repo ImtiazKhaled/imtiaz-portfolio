@@ -67,6 +67,9 @@ export var styles = {
         fontFamily: 'Play, sans-serif',
         fontSize: '1vw',
     },
+    ContactPage: {
+        minHeight: '70vh',    
+    },
     Footer: {
         height: '10vh',
         width: '100vw',
