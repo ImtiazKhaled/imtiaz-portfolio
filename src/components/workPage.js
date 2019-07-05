@@ -18,7 +18,7 @@ export class Work extends React.Component {
                     </Divider>
                     <Row>
                         {work.map(work =>
-                            <WorkDetails data={work} />
+                            <WorkDetails responsive={this.props.responsive} data={work} />
                         )}
                     </Row>
                 </div>

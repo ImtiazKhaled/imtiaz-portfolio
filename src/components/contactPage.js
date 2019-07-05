@@ -20,11 +20,11 @@ export class Contact extends React.Component {
                     </div>
                     </Divider>
                     <div className='wow fadeInUp' data-wow-duration='1s' data-wow-iteration='1' style={styles.ContactInfo}>
-                        <div style={styles.SubtitleTwo}>
+                        <div style={this.props.responsive.SubtitleThree}>
                             I am currently looking for internships, and would be delighted to be contacted by potential employers.
                     </div>
-                        <div style={styles.SubtitleFour}> Shoot me an email @</div>
-                        <a href={emailto}><div style={styles.SubtitleThree}> imtiazkhaled07@gmail.com </div></a>
+                        <div style={this.props.responsive.Title}> Shoot me an email @</div>
+                        <a href={emailto}><div style={this.props.responsive.SubtitleFour}> imtiazkhaled07@gmail.com </div></a>
                     </div>
                 </div>
             </Element>

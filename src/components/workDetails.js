@@ -6,26 +6,14 @@ const { Title } = Typography;
 
 
 export class WorkDetails extends React.Component {
-    state = {
-        paddingBottom: '0vw'
-    }
     componentDidMount() {
+        console.log('this is props',this.props.responsive);
         new WOW.WOW().init();
-    }
-    IncreaseButtomPadding = e => {
-        this.setState(
-            {
-                paddingBottom: '2vw',
-            }
-        )
     }
     render() {
         return (
-            <Col className='wow fadeInUp' data-wow-duration='1s' data-wow-iteration='1' span={10} style={styles.WorkCardContainer}>
-                <Card onHover={ this.IncreaseButtomPadding } style={{
-                    background: 'linear-gradient(to bottom, #fffdd0, #fffdd0',
-                    PaddingBottom: this.state.paddingBottom
-                }}>
+            <Col className='wow fadeInUp' data-wow-duration='1s' data-wow-iteration='1' span={this.props.responsive.workColSize} style={styles.WorkCardContainer}>
+                <Card style={styles.WorkCardContainer}>
                     <Row>
                         <Col span={8}>
                             <div> <Icon style={styles.WorkIcon} type="folder" /></div>

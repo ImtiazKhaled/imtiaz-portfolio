@@ -1,13 +1,6 @@
 import { colorThemes } from './colorThemes';
 
-export var styles = {
-    Landing: {
-        height: '100vh',
-        paddingTop: '10vh',
-        paddingRight: '10vw',
-        paddingLeft: '2vw',
-        textAlign: 'right',
-    },
+export const stylesXS = {
     showNavbar: {
         visibility: 'visible',
         transition: 'all 200ms ease-in',
@@ -15,37 +8,39 @@ export var styles = {
     hideNavbar: {
         visibility: 'hidden',
         transition: 'all 200ms ease-out',
-        transform: 'translate(0, -100)',   
+        transform: 'translate(0, -100)',
     },
     NavBar: {
         backgroundColor: colorThemes.BackgroundDark,
     },
-    Page: {
-        background: 'linear-gradient(to bottom, ' + colorThemes.BackgroundDark + ', ' + colorThemes.Background,
-    },
     Title: {
-        fontSize: '3vw',
+        fontSize: '9vw',
         color: colorThemes.BackgroundAccentMain,
         fontFamily: 'Play, sans-serif',
     },
     Subtitle: {
-        fontSize: '2vw',
-        color: colorThemes.BackgroundAccentMain,
+        fontSize: '4vw',
+        color: colorThemes.BackgroundAccentTwo,
         fontFamily: 'Play, sans-serif',
     },
     SubtitleTwo: {
-        fontSize: '1.5vw',
-        color: colorThemes.BackgroundAccentMain,
+        fontSize: '4vw',
+        color: colorThemes.BackgroundAccentTwo,
         fontFamily: 'Play, sans-serif',
     },
     SubtitleThree: {
-        fontSize: '1.5vw',
-        color: colorThemes.BackgroundAccent,
+        fontSize: '5vw',
+        color: colorThemes.BackgroundAccentTwo,
         fontFamily: 'Play, sans-serif',
     },
     SubtitleFour: {
-        fontSize: '1vw',
-        color: colorThemes.BackgroundAccentTwo,
+        fontSize: '7vw',
+        color: colorThemes.BackgroundAccent,
+        fontFamily: 'Play, sans-serif',
+    },
+    SubtitleFive: {
+        fontSize: '7vw',
+        color: colorThemes.BackgroundAccent,
         fontFamily: 'Play, sans-serif',
     },
     ContactMeTag: {
@@ -56,7 +51,6 @@ export var styles = {
         fontFamily: 'Play, sans-serif',
         color: colorThemes.BackgroundAccent,
         backgroundColor: colorThemes.BackgroundAccentTwo,
-
     },
     MainPage: {
         minHeight: '100vh',
@@ -64,45 +58,36 @@ export var styles = {
     WhoTab: {
         color: 'black',
     },
-    WorkCardContainer: {
-        backgroundColor: colorThemes.BackgroundAccent,
-    },
     WorkIcon: {
         fontSize: '5vw',
-        color: colorThemes.BackgroundAccentTwo,
+        color: colorThemes.BackgroundAccent,
     },
     WorkTitle: {
         fontSize: '2vw',
         fontFamily: 'Play, sans-serif',
-        color: colorThemes.BackgroundAccentTwo,
+        color: colorThemes.BackgroundAccent,
     },
     WorkSocialLink: {
         fontSize: '2vw',
-        color: colorThemes.BackgroundAccentTwo,
+        color: colorThemes.BackgroundAccent,
     },
     WorkTags: {
         fontFamily: 'Play, sans-serif',
         color: colorThemes.BackgroundAccenMain,
-        backgroundColor: colorThemes.BackgroundAccentTwo,
+        backgroundColor: colorThemes.BackgroundAccent,
     },
     WorkDetails: {
         fontFamily: 'Play, sans-serif',
         fontSize: '1vw',
-        color: colorThemes.BackgroundAccentTwo,
-    },
-    ContactPage: {
-        minHeight: '70vh',
-        textAlign: 'center',
-    },
-    ContactInfo: {
-        padding: '5vw',
+        color: colorThemes.BackgroundAccent,
     },
     Footer: {
         height: '10vh',
         width: '100vw',
         color: colorThemes.BackgroundAccentMain,
-        fontSize: '1vw',
+        fontSize: '4vw',
         textAlign: 'center',
         backgroundColor: colorThemes.Background,
     },
+    workColSize: 24,
 }

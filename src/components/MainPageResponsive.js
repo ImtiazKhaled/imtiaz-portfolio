@@ -1,9 +1,10 @@
 import React from 'react';
 import { Typography, Row, Col, Layout } from 'antd';
-// import { styles } from '../styles/workPageStyles'
 import Breakpoint from 'react-socks';
-import { Work, Structure } from './structure';
+// import { Structure } from './structure';
+import { Structure } from './structure';
 import { colorThemes } from '../styles/colorThemes';
+import { responsive } from '../data/responsive';
 const { Title } = Typography;
 const { Header, Footer } = Layout;
 
@@ -12,11 +13,14 @@ export default class WorkPageResponsive extends React.Component {
     render() {
         return (
             <Layout>
-                {/* <MenuButton color={colorThemes.workHeaderFooter} title={'work'} /> */}
-                {/* <Breakpoint xsmall only>
-                    <WhoXSmall />
+                <h1>this website is still under construction</h1>
+                <Breakpoint xsmall only>
+                    <Structure responsive={responsive[0]} />
                 </Breakpoint>
-                <Breakpoint small only>
+                <Breakpoint small up>
+                    <Structure responsive={responsive[1]} />
+                </Breakpoint>
+                {/* <Breakpoint small only>
                     <WhoSmall />
                 </Breakpoint>
                 <Breakpoint medium only>
@@ -25,10 +29,8 @@ export default class WorkPageResponsive extends React.Component {
                 <Breakpoint large only>
                     <WhoLarge />
                 </Breakpoint>
-                <Breakpoint xlarge only> */}
-                <h1>this website is still under construction</h1>
-                    <Structure />
-                {/* </Breakpoint> */}
+                <Breakpoint xlarge only>
+                </Breakpoint> */}
             </Layout>
         );
     }

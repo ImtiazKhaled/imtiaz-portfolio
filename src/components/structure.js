@@ -17,13 +17,10 @@ export class Structure extends React.Component {
     componentDidMount() {
         new WOW.WOW().init();
         Events.scrollEvent.register('begin', function (to, element) {
-            console.log("begin", arguments);
         });
 
         Events.scrollEvent.register('end', function (to, element) {
-            console.log("end", arguments);
         });
-
         scrollSpy.update();
     }
     componentWillUnmount() {
@@ -40,11 +37,11 @@ export class Structure extends React.Component {
             <div>
                 <Row style={styles.Page}>
                     <TopBar />
-                    <Landing />
+                    <Landing responsive={this.props.responsive} />
                     <Who />
-                    <Work />
-                    <Contact />
-                    <Footer style={styles.Footer}>Imtiaz Mujtaba Khaled ©2019</Footer>
+                    <Work responsive={this.props.responsive} />
+                    <Contact responsive={this.props.responsive} />
+                    <Footer style={this.props.responsive.Footer}>Imtiaz Mujtaba Khaled ©2019</Footer>
                 </Row>
             </div>
         );

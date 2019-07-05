@@ -31,8 +31,8 @@ export var colorThemes = {
     BackgroundMid: '#00cccc',
     BackgroundDark: '#00c0c0',
     DetailsTitle: '#ca2c92',
-    BackgroundAccent: '#ff007f',
-    BackgroundAccentTwo: '#fffdd0',
+    BackgroundAccent: '#ffc0cb',
+    BackgroundAccentTwo: '#003153',
 
 }
 
