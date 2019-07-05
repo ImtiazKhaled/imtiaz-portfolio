@@ -7,6 +7,18 @@ export var styles = {
         paddingRight: '10vw',
         textAlign: 'right',
     },
+    showNavbar: {
+        visibility: 'visible',
+        transition: 'all 200ms ease-in',
+    },
+    hideNavbar: {
+        visibility: 'hidden',
+        transition: 'all 200ms ease-out',
+        transform: 'translate(0, -100)',   
+    },
+    NavBar: {
+        backgroundColor: colorThemes.BackgroundDark,
+    },
     Page: {
         background: 'linear-gradient(to bottom, ' + colorThemes.BackgroundDark + ', ' + colorThemes.Background,
     },
@@ -87,8 +99,6 @@ export var styles = {
     Footer: {
         height: '10vh',
         width: '100vw',
-        position: 'sticky',
-        bottom: '0',
         color: colorThemes.BackgroundAccentMain,
         fontSize: '1vw',
         textAlign: 'center',
