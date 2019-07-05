@@ -12,34 +12,38 @@ export var styles = {
     },
     Title: {
         fontSize: '3vw',
-        color: colorThemes.HeaderFooter,
+        color: colorThemes.BackgroundAccentMain,
         fontFamily: 'Play, sans-serif',
     },
     Subtitle: {
         fontSize: '2vw',
-        color: colorThemes.HeaderFooter,
+        color: colorThemes.BackgroundAccentMain,
         fontFamily: 'Play, sans-serif',
     },
     SubtitleTwo: {
         fontSize: '1.5vw',
-        color: colorThemes.HeaderFooter,
+        color: colorThemes.BackgroundAccentMain,
         fontFamily: 'Play, sans-serif',
     },
     SubtitleThree: {
         fontSize: '1.5vw',
-        color: colorThemes.DetialsText,
+        color: colorThemes.BackgroundAccent,
         fontFamily: 'Play, sans-serif',
     },
     SubtitleFour: {
         fontSize: '1vw',
-        color: colorThemes.WhoDate,
+        color: colorThemes.BackgroundAccentTwo,
         fontFamily: 'Play, sans-serif',
     },
-    ContactMeButton: {
+    ContactMeTag: {
         margin: '1vw',
         fontSize: '1.5vw',
-        color: colorThemes.HeaderFooter,
+        // color: colorThemes.BackgroundAccentMain,
+        // fontFamily: 'Play, sans-serif',
         fontFamily: 'Play, sans-serif',
+        color: colorThemes.BackgroundAccent,
+        backgroundColor: colorThemes.BackgroundAccentTwo,
+
     },
     MainPage: {
         minHeight: '100vh',
@@ -52,31 +56,41 @@ export var styles = {
     },
     WorkIcon: {
         fontSize: '5vw',
+        color: colorThemes.BackgroundAccent,
     },
     WorkTitle: {
         fontSize: '2vw',
         fontFamily: 'Play, sans-serif',
+        color: colorThemes.BackgroundAccent,
     },
     WorkSocialLink: {
         fontSize: '2vw',
+        color: colorThemes.BackgroundAccent,
     },
     WorkTags: {
         fontFamily: 'Play, sans-serif',
+        color: colorThemes.BackgroundAccenMain,
+        backgroundColor: colorThemes.BackgroundAccent,
     },
     WorkDetails: {
         fontFamily: 'Play, sans-serif',
         fontSize: '1vw',
+        color: colorThemes.BackgroundAccent,
     },
     ContactPage: {
-        minHeight: '70vh',    
+        minHeight: '70vh',
+        textAlign: 'center',
+    },
+    ContactInfo: {
+        padding: '5vw',
     },
     Footer: {
         height: '10vh',
         width: '100vw',
         position: 'sticky',
         bottom: '0',
-        color: colorThemes.HeaderFooter,
-        fontSize: '1em',
+        color: colorThemes.BackgroundAccentMain,
+        fontSize: '1vw',
         textAlign: 'center',
         backgroundColor: colorThemes.Background,
     },

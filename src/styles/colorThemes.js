@@ -27,12 +27,12 @@ export var colorThemes = {
     // workDetialsText: 'white',
 
     Background: '#40e5e4',
-    HeaderFooter: 'purple',
+    BackgroundAccentMain: 'purple',
     BackgroundMid: '#00cccc',
     BackgroundDark: '#00c0c0',
-    DetailsTitle: 'purple',
-    DetialsText: 'white',
-    WhoDate: 'grey',
+    DetailsTitle: '#ca2c92',
+    BackgroundAccent: '#ff007f',
+    BackgroundAccentTwo: '#fffdd0',
 
 }
 

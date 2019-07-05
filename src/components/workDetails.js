@@ -6,15 +6,25 @@ const { Title } = Typography;
 
 
 export class WorkDetails extends React.Component {
+    state = {
+        paddingBottom: '0vw'
+    }
     componentDidMount() {
         new WOW.WOW().init();
     }
+    IncreaseButtomPadding = e => {
+        this.setState(
+            {
+                paddingBottom: '2vw',
+            }
+        )
+    }
     render() {
         return (
-            <Col span={10} style={styles.WorkCardContainer}>
-                <Card style={{
-                    background: 'linear-gradient(to bottom, #800080, #8B008B',
-
+            <Col className='wow fadeInUp' data-wow-duration='1s' data-wow-iteration='1' span={10} style={styles.WorkCardContainer}>
+                <Card onHover={ this.IncreaseButtomPadding } style={{
+                    background: 'linear-gradient(to bottom, #fffdd0, #fffdd0',
+                    PaddingBottom: this.state.paddingBottom
                 }}>
                     <Row>
                         <Col span={8}>
@@ -44,26 +54,6 @@ export class WorkDetails extends React.Component {
                     </Row>
                 </Card>
             </Col>
-            // <Col span={12}><Card key={this.props.data.id} style={styles.cardOpen}>
-            //     <Row> <Tag color='#001f3f'> {this.props.data.type} </Tag> </Row>
-            //     <Row>
-            //         <Col span={10}>
-            //             <img width='100%' styles={styles.logo} src={this.props.data.logo} ></img>
-            //         </Col>
-            //         <Col style={{ paddingLeft: '1em' }} span={10}>
-            //             <Row>
-            //                 <Title style={styles.projectTitle}>{this.props.data.title}</Title>
-            //             </Row>
-            //             <Row>
-            //                 Stack {this.props.data.stack.map(i => <Tag color='#85144b'>{i}</Tag>)}
-            //             </Row>
-            //             <Row>
-            //                 <a href={this.props.data.sourceCode}><Tag color='#3D9970'>Source Code</Tag></a>
-            //             </Row>
-            //         </Col>
-            //     </Row>
-            //     <Row> {this.props.data.description} </Row>
-            // </Card></Col>
         );
     }
 }

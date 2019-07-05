@@ -26,6 +26,7 @@ export default class WorkPageResponsive extends React.Component {
                     <WhoLarge />
                 </Breakpoint>
                 <Breakpoint xlarge only> */}
+                <h1>this website is still under construction</h1>
                     <Structure />
                 {/* </Breakpoint> */}
             </Layout>
