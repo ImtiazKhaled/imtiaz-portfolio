@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Row, Col, Layout, Button, Divider, Affix, Modal } from 'antd';
+import { Typography, Row, Col, Layout, Button, Divider, Affix, Modal, Tag } from 'antd';
 import { styles } from '../styles/styles';
 import WOW from 'wowjs';
 import { Landing } from './landingPage';
@@ -78,19 +78,24 @@ export class TopBar extends React.Component {
                             {this.props.worked}
                         </text>
                         <Row>
-                            <Link activeClass="active" to="who" isDynamic={true} spy={true} smooth={true} duration={500} style={styles.NavBarText}>
+                            <Link activeClass="active" to="who" isDynamic={true} spy={true} smooth={true} duration={500} style={this.props.responsive.NavBarText}>
                                 who
                     </Link>
                         </Row>
                         <Row>
-                            <Link activeClass="active" to="work" isDynamic={true} spy={true} smooth={true} duration={500} style={styles.NavBarText}>
+                            <Link activeClass="active" to="work" isDynamic={true} spy={true} smooth={true} duration={500} style={this.props.responsive.NavBarText}>
                                 work
                     </Link>
                         </Row>
                         <Row>
-                            <Link activeClass="active" to="contact" isDynamic={true} spy={true} smooth={true} duration={500} style={styles.NavBarText}>
+                            <Link activeClass="active" to="contact" isDynamic={true} spy={true} smooth={true} duration={500} style={this.props.responsive.NavBarText}>
                                 contact
                     </Link>
+                        </Row>
+                        <Row>
+                            <a href='https://drive.google.com/uc?export=download&id=1K7ron4NnobQEof6Wccj1W8QMn3aB0dyO'>
+                                <Tag style={styles.ContactMeTag}>Resume</Tag>
+                            </a>
                         </Row>
                     </Modal>
                 </div>
@@ -98,29 +103,21 @@ export class TopBar extends React.Component {
                 <div>
                     <Affix style={this.state.show ? styles.showNavbar : styles.hideNavbar}>
                         <div style={this.props.responsive.NavBar}>
-                            <Row>
-                                <Col span={8}>
-                                    <Divider>
-                                        <Link activeClass="active" to="who" isDynamic={true} spy={true} smooth={true} duration={500} style={this.props.responsive.NavBarText}>
-                                            who
-                                    </Link>
-                                    </Divider>
-                                </Col>
-                                <Col span={8}>
-                                    <Divider>
-                                        <Link activeClass="active" to="work" isDynamic={true} spy={true} smooth={true} duration={500} style={this.props.responsive.NavBarText}>
-                                            work
-                                    </Link>
-                                    </Divider>
-                                </Col>
-                                <Col span={8}>
-                                    <Divider>
-                                        <Link activeClass="active" to="contact" isDynamic={true} spy={true} smooth={true} duration={500} style={this.props.responsive.NavBarText}>
-                                            contact
-                                    </Link>
-                                    </Divider>
-                                </Col>
-                            </Row>
+                            <Link activeClass="active" to="who" isDynamic={true} spy={true} smooth={true} duration={500} style={this.props.responsive.NavBarText}>
+                                who
+                            </Link>
+                            <Divider type="vertical" />
+                            <Link activeClass="active" to="work" isDynamic={true} spy={true} smooth={true} duration={500} style={this.props.responsive.NavBarText}>
+                                work
+                            </Link>
+                            <Divider type="vertical" />
+                            <Link activeClass="active" to="contact" isDynamic={true} spy={true} smooth={true} duration={500} style={this.props.responsive.NavBarText}>
+                                contact
+                            </Link>
+                            <Divider type="vertical" />
+                            <a href='https://drive.google.com/uc?export=download&id=1K7ron4NnobQEof6Wccj1W8QMn3aB0dyO'>
+                                <Tag style={styles.ContactMeTag}>Resume</Tag>
+                            </a>
                         </div>
                     </Affix>
                 </div>
