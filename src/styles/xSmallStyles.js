@@ -106,4 +106,5 @@ export const stylesXS = {
     },
     WorkColSize: 24,
     WhoTabPosition: 'top', 
+    TopBar: true,
 }

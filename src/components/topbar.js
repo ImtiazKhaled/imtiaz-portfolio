@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Row, Col, Layout, Button, Divider, Affix } from 'antd';
+import { Typography, Row, Col, Layout, Button, Divider, Affix, Modal } from 'antd';
 import { styles } from '../styles/styles';
 import WOW from 'wowjs';
 import { Landing } from './landingPage';
@@ -18,6 +18,7 @@ export class TopBar extends React.Component {
         this.state = {
             show: true,
             scrollPos: 0,
+            visible: false,
         };
         this.handleScroll = this.handleScroll.bind(this);
     }
@@ -40,43 +41,89 @@ export class TopBar extends React.Component {
         Events.scrollEvent.remove('begin');
         Events.scrollEvent.remove('end');
     }
-    handleScroll= e => {
+    handleScroll = e => {
         const { scrollPos } = this.state;
         this.setState({
-          scrollPos: document.body.getBoundingClientRect().top,
-          show: document.body.getBoundingClientRect().top > scrollPos
+            scrollPos: document.body.getBoundingClientRect().top,
+            show: document.body.getBoundingClientRect().top > scrollPos
         });
-      }
+    }
+    openMenu = e => {
+        this.setState({
+            visible: true,
+        });
+    }
+    handleCancel = e => {
+        this.setState({
+            visible: false,
+        });
+    };
     render() {
         return (
-
-            <Affix style={this.state.show ? styles.showNavbar : styles.hideNavbar}>
-                <div style={styles.NavBar}>
-                    <Row>
-                        <Col span={8}>
-                            <Divider>
-                                <Link activeClass="active" to="who" isDynamic={true} spy={true} smooth={true} duration={500} style={styles.SubtitleTwo}>
-                                    who
+            this.props.responsive.TopBar ?
+                <div>
+                    <Affix offsetTop={20} style={styles.menuButtonLanding} >
+                        <div>
+                            <Button style={styles.NavBarSmall} type='link' shape='circle' icon='menu' size='large' onClick={this.openMenu} />
+                        </div>
+                    </Affix>
+                    <Modal
+                        centered
+                        bodyStyle={styles.NavBarColor}
+                        visible={this.state.visible}
+                        onCancel={this.handleCancel}
+                        footer={null}
+                    >
+                        <text>
+                            {this.props.worked}
+                        </text>
+                        <Row>
+                            <Link activeClass="active" to="who" isDynamic={true} spy={true} smooth={true} duration={500} style={styles.NavBarText}>
+                                who
                     </Link>
-                            </Divider>
-                        </Col>
-                        <Col span={8}>
-                            <Divider>
-                                <Link activeClass="active" to="work" isDynamic={true} spy={true} smooth={true} duration={500} style={styles.SubtitleTwo}>
-                                    work
+                        </Row>
+                        <Row>
+                            <Link activeClass="active" to="work" isDynamic={true} spy={true} smooth={true} duration={500} style={styles.NavBarText}>
+                                work
                     </Link>
-                            </Divider>
-                        </Col>
-                        <Col span={8}>
-                            <Divider>
-                                <Link activeClass="active" to="contact" isDynamic={true} spy={true} smooth={true} duration={500} style={styles.SubtitleTwo}>
-                                    contact
+                        </Row>
+                        <Row>
+                            <Link activeClass="active" to="contact" isDynamic={true} spy={true} smooth={true} duration={500} style={styles.NavBarText}>
+                                contact
                     </Link>
-                            </Divider>
-                        </Col>
-                    </Row>
+                        </Row>
+                    </Modal>
                 </div>
-            </Affix>
+                :
+                <div>
+                    <Affix style={this.state.show ? styles.showNavbar : styles.hideNavbar}>
+                        <div style={styles.NavBar}>
+                            <Row>
+                                <Col span={8}>
+                                    <Divider>
+                                        <Link activeClass="active" to="who" isDynamic={true} spy={true} smooth={true} duration={500} style={styles.SubtitleTwo}>
+                                            who
+                                    </Link>
+                                    </Divider>
+                                </Col>
+                                <Col span={8}>
+                                    <Divider>
+                                        <Link activeClass="active" to="work" isDynamic={true} spy={true} smooth={true} duration={500} style={styles.SubtitleTwo}>
+                                            work
+                                    </Link>
+                                    </Divider>
+                                </Col>
+                                <Col span={8}>
+                                    <Divider>
+                                        <Link activeClass="active" to="contact" isDynamic={true} spy={true} smooth={true} duration={500} style={styles.SubtitleTwo}>
+                                            contact
+                                    </Link>
+                                    </Divider>
+                                </Col>
+                            </Row>
+                        </div>
+                    </Affix>
+                </div>
         );
     }
 }

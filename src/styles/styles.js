@@ -20,6 +20,17 @@ export var styles = {
     NavBar: {
         backgroundColor: colorThemes.BackgroundDark,
     },
+    NavBarSmall: {
+        fontSize: '5vw',
+        color: colorThemes.BackgroundAccentMain,
+    },
+    NavBarText: {
+        fontSize: '8vw',
+        color: colorThemes.BackgroundAccentMain,
+    },
+    NavBarColor: {
+        backgroundColor: colorThemes.Background,
+    },
     Page: {
         background: 'linear-gradient(to bottom, ' + colorThemes.BackgroundDark + ', ' + colorThemes.Background,
     },

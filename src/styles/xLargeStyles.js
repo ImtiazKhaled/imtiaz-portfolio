@@ -85,4 +85,5 @@ export const stylesXL = {
     },
     WorkColSize: 10,
     WhoTabPosition: 'left',
+    TopBar: false,
 }

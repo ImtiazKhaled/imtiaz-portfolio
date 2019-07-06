@@ -36,7 +36,7 @@ export class Structure extends React.Component {
         return (
             <div>
                 <Row style={styles.Page}>
-                    <TopBar />
+                    <TopBar responsive={this.props.responsive} />
                     <Landing responsive={this.props.responsive} />
                     <Who responsive={this.props.responsive} />
                     <Work responsive={this.props.responsive} />
