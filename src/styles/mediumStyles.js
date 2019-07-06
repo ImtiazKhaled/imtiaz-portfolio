@@ -68,10 +68,11 @@ export const stylesM = {
     },
     ContactMeTag: {
         margin: '1vw',
-        fontSize: '1.5vw',
+        padding: '1vw',
+        fontSize: '3vw',
         fontFamily: 'hack, sans-serif',
         color: colorThemes.BackgroundAccent,
-        backgroundColor: colorThemes.BackgroundAccentTwo,
+        backgroundColor: 'transparent',
     },
     NavBar: {
         backgroundColor: colorThemes.BackgroundDark,

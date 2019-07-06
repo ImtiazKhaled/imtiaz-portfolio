@@ -76,10 +76,11 @@ export const stylesS = {
     },
     ContactMeTag: {
         margin: '1vw',
-        fontSize: '1.5vw',
+        padding: '2vw',
+        fontSize: '5vw',
         fontFamily: 'hack, sans-serif',
         color: colorThemes.BackgroundAccent,
-        backgroundColor: colorThemes.BackgroundAccentTwo,
+        backgroundColor: 'transparent',
     },
     MainPage: {
         minHeight: '100vh',

@@ -94,7 +94,7 @@ export class TopBar extends React.Component {
                         </Row>
                         <Row>
                             <a href='https://drive.google.com/uc?export=download&id=1K7ron4NnobQEof6Wccj1W8QMn3aB0dyO'>
-                                <Tag style={styles.ContactMeTag}>Resume</Tag>
+                                <Tag style={this.props.responsive.ContactMeTag}>Resume</Tag>
                             </a>
                         </Row>
                     </Modal>
@@ -114,9 +114,8 @@ export class TopBar extends React.Component {
                             <Link activeClass="active" to="contact" isDynamic={true} spy={true} smooth={true} duration={500} style={this.props.responsive.NavBarText}>
                                 contact
                             </Link>
-                            <Divider type="vertical" />
                             <a href='https://drive.google.com/uc?export=download&id=1K7ron4NnobQEof6Wccj1W8QMn3aB0dyO'>
-                                <Tag style={styles.ContactMeTag}>Resume</Tag>
+                                <Tag style={this.props.responsive.ContactMeTag}>Resume</Tag>
                             </a>
                         </div>
                     </Affix>

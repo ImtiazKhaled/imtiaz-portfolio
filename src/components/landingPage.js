@@ -19,7 +19,7 @@ export class Landing extends React.Component {
                     I major in Computer Science, currently in my Junior Year at the University of Texas at Arlington.
                         </div>
                 <a href={emailto}>
-                    <Tag style={styles.ContactMeTag}>contact me</Tag>
+                    <Tag style={this.props.responsive.ContactMeTag}>contact me</Tag>
                 </a>
             </div>
         );

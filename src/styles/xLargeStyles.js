@@ -68,10 +68,11 @@ export const stylesXL = {
     },
     ContactMeTag: {
         margin: '1vw',
+        padding: '1vw',
         fontSize: '1.5vw',
         fontFamily: 'hack, sans-serif',
         color: colorThemes.BackgroundAccent,
-        backgroundColor: colorThemes.BackgroundAccentTwo,
+        backgroundColor: 'transparent',
     },
     NavBar: {
         backgroundColor: colorThemes.BackgroundDark,
@@ -104,8 +105,8 @@ export const stylesXL = {
     },
     WorkTags: {
         fontFamily: 'hack, sans-serif',
-        color: colorThemes.BackgroundAccenMain,
-        backgroundColor: colorThemes.BackgroundAccentTwo,
+        color: colorThemes.BackgroundAccentThree,
+        backgroundColor: 'transparent',
     },
     WorkDetails: {
         fontFamily: 'hack, sans-serif',
