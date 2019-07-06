@@ -1,68 +1,68 @@
 import { colorThemes } from './colorThemes';
 
-export const stylesXL = {
+export const stylesM = {
     Title: {
-        fontSize: '4vw',
+        fontSize: '6vw',
         color: colorThemes.BackgroundAccentMain,
         fontFamily: 'hack, sans-serif',
     },
     Subtitle: {
-        fontSize: '2vw',
+        fontSize: '4vw',
         color: colorThemes.BackgroundAccentTwo,
         fontFamily: 'hack, sans-serif',
     },
     SubtitleTwo: {
-        fontSize: '1vw',
+        fontSize: '3vw',
         color: colorThemes.BackgroundAccentTwo,
         fontFamily: 'hack, sans-serif',
     },
     SubtitleThree: {
-        fontSize: '2vw',
+        fontSize: '4vw',
         color: colorThemes.BackgroundAccentTwo,
         fontFamily: 'hack, sans-serif',
     },
     SubtitleFour: {
-        fontSize: '4vw',
+        fontSize: '6vw',
         color: colorThemes.BackgroundAccent,
         fontFamily: 'hack, sans-serif',
     },
     SubtitleFive: {
-        fontSize: '2vw',
+        fontSize: '4vw',
         color: colorThemes.BackgroundAccent,
         fontFamily: 'hack, sans-serif',
     },
     SubtitleSix: {
-        fontSize: '2vw',
+        fontSize: '4vw',
         color: colorThemes.BackgroundAccent,
         fontFamily: 'hack, sans-serif',
     },
     SubtitleSeven: {
-        fontSize: '1.5vw',
+        fontSize: '3vw',
         color: colorThemes.BackgroundAccentMain,
         fontFamily: 'hack, sans-serif',
     },
     SubtitleEight: {
-        fontSize: '1.5vw',
+        fontSize: '3vw',
         color: colorThemes.BackgroundAccentThree,
         fontFamily: 'hack, sans-serif',
     },
     SubtitleNine: {
-        fontSize: '1vw',
+        fontSize: '3vw',
         color: colorThemes.BackgroundAccentFour,
         fontFamily: 'hack, sans-serif',
     },
     SubtitleTen: {
-        fontSize: '2vw',
+        fontSize: '4vw',
         color: colorThemes.BackgroundAccentMain,
         fontFamily: 'hack, sans-serif',
     },
     SubtitleEleven: {
-        fontSize: '4vw',
+        fontSize: '6vw',
         color: colorThemes.BackgroundAccent,
         fontFamily: 'hack, sans-serif',
     },
     SubtitleTwelve: {
-        fontSize: '4vw',
+        fontSize: '6vw',
         color: colorThemes.BackgroundAccentMain,
         fontFamily: 'hack, sans-serif',
     },
@@ -77,29 +77,29 @@ export const stylesXL = {
         backgroundColor: colorThemes.BackgroundDark,
     },
     NavBarText: {
-        fontSize: '2vw',
+        fontSize: '3vw',
         color: colorThemes.BackgroundAccentMain,
     },
     MainPage: {
         minHeight: '100vh',
     },
     WhoTab: {
-        width: '60vw',
+        width: '80vw',
     },    
     WorkTab: {
-        width: '60vw',
+        width: '80vw',
     },
     WorkIcon: {
-        fontSize: '5vw',        
+        fontSize: '7vw',        
         color: colorThemes.BackgroundAccent,
     },
     WorkTitle: {
-        fontSize: '2vw',
+        fontSize: '4vw',
         fontFamily: 'hack, sans-serif',
         color: colorThemes.BackgroundAccentMain,
     },
     WorkSocialLink: {
-        fontSize: '2vw',
+        fontSize: '4vw',
         color: colorThemes.BackgroundAccentThree,
     },
     WorkTags: {
@@ -109,14 +109,14 @@ export const stylesXL = {
     },
     WorkDetails: {
         fontFamily: 'hack, sans-serif',
-        fontSize: '1vw',
+        fontSize: '3vw',
         color: colorThemes.BackgroundAccentTwo,
     },
     Footer: {
         minHeight: '10vh',
         width: '100vw',
         color: colorThemes.BackgroundAccentMain,
-        fontSize: '1vw',
+        fontSize: '2vw',
         textAlign: 'center',
         backgroundColor: colorThemes.Background,
     },

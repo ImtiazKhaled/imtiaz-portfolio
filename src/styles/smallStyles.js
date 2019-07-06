@@ -114,7 +114,7 @@ export const stylesS = {
         color: colorThemes.BackgroundAccentTwo,
     },
     Footer: {
-        height: '10vh',
+        minHeight: '10vh',
         width: '100vw',
         color: colorThemes.BackgroundAccentMain,
         fontSize: '4vw',
