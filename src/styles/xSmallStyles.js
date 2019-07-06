@@ -56,6 +56,24 @@ export const stylesXS = {
         color: colorThemes.BackgroundAccentMain,
         fontFamily: 'hack, sans-serif',
     },
+    SubtitleEleven: {
+        fontSize: '9vw',
+        color: colorThemes.BackgroundAccent,
+        fontFamily: 'hack, sans-serif',
+    },
+    SubtitleTwelve: {
+        fontSize: '5vw',
+        color: colorThemes.BackgroundAccentMain,
+        fontFamily: 'hack, sans-serif',
+    },
+    NavBar: {
+        fontSize: '5vw',
+        color: colorThemes.BackgroundAccentMain,
+    },
+    NavBarText: {
+        fontSize: '8vw',
+        color: colorThemes.BackgroundAccentMain,
+    },
     ContactMeTag: {
         margin: '1vw',
         fontSize: '1.5vw',
@@ -67,7 +85,6 @@ export const stylesXS = {
         minHeight: '100vh',
     },
     WhoTab: {
-        // color: 'black',
         padding: '3vw',
     },
     WorkTab: {
@@ -104,7 +121,7 @@ export const stylesXS = {
         textAlign: 'center',
         backgroundColor: colorThemes.Background,
     },
-    WorkColSize: 24,
     WhoTabPosition: 'top', 
     TopBar: true,
+    AnimationUp: false,
 }

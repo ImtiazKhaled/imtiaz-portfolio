@@ -19,12 +19,14 @@ export class Contact extends React.Component {
                             contact
                     </div>
                     </Divider>
-                    <div className='wow fadeInUp' data-wow-duration='1s' data-wow-iteration='1' style={styles.ContactInfo}>
-                        <div style={this.props.responsive.SubtitleThree}>
+                    <div style={styles.ContactInfo}>
+                        <div className='wow fadeInUp' data-wow-duration='700ms' data-wow-iteration='1' style={this.props.responsive.SubtitleThree}>
                             I am currently looking for internships, and would be delighted to be contacted by potential employers.
                     </div>
-                        <div style={this.props.responsive.Title}> Shoot me an email @</div>
-                        <a href={emailto}><div style={this.props.responsive.SubtitleFour}> imtiazkhaled07@gmail.com </div></a>
+                        <div className='wow fadeInUp' data-wow-duration='700ms' data-wow-iteration='1' data-wow-delay='100ms' style={this.props.responsive.SubtitleEleven}> Shoot me an email @</div>
+                        <a href={emailto}>
+                            <div className='wow fadeInUp' data-wow-duration='700ms' data-wow-iteration='1' data-wow-delay='200ms' style={this.props.responsive.SubtitleTwelve}> imtiazkhaled07@gmail.com</div>
+                            </a>
                     </div>
                 </div>
             </Element>

@@ -17,8 +17,11 @@ export default class WorkPageResponsive extends React.Component {
                 <Breakpoint xsmall only>
                     <Structure responsive={responsive[0]} />
                 </Breakpoint>
-                <Breakpoint small up>
+                <Breakpoint small only>
                     <Structure responsive={responsive[1]} />
+                </Breakpoint>
+                <Breakpoint medium up>
+                    <Structure responsive={responsive[2]} />
                 </Breakpoint>
                 {/* <Breakpoint small only>
                     <WhoSmall />

@@ -2,7 +2,7 @@ import { colorThemes } from './colorThemes';
 
 export var styles = {
     Landing: {
-        height: '100vh',
+        minHeight: '100vh',
         paddingTop: '10vh',
         paddingRight: '10vw',
         paddingLeft: '2vw',
@@ -16,17 +16,6 @@ export var styles = {
         visibility: 'hidden',
         transition: 'all 200ms ease-out',
         transform: 'translate(0, -100)',   
-    },
-    NavBar: {
-        backgroundColor: colorThemes.BackgroundDark,
-    },
-    NavBarSmall: {
-        fontSize: '5vw',
-        color: colorThemes.BackgroundAccentMain,
-    },
-    NavBarText: {
-        fontSize: '8vw',
-        color: colorThemes.BackgroundAccentMain,
     },
     NavBarColor: {
         backgroundColor: colorThemes.Background,
@@ -53,13 +42,5 @@ export var styles = {
     },
     ContactInfo: {
         padding: '5vw',
-    },
-    Footer: {
-        height: '10vh',
-        width: '100vw',
-        color: colorThemes.BackgroundAccentMain,
-        fontSize: '1vw',
-        textAlign: 'center',
-        backgroundColor: colorThemes.Background,
     },
 }

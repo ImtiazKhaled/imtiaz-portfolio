@@ -64,7 +64,7 @@ export class TopBar extends React.Component {
                 <div>
                     <Affix offsetTop={20} style={styles.menuButtonLanding} >
                         <div>
-                            <Button style={styles.NavBarSmall} type='link' shape='circle' icon='menu' size='large' onClick={this.openMenu} />
+                            <Button style={this.props.responsive.NavBar} type='link' shape='circle' icon='menu' size='large' onClick={this.openMenu} />
                         </div>
                     </Affix>
                     <Modal
@@ -97,25 +97,25 @@ export class TopBar extends React.Component {
                 :
                 <div>
                     <Affix style={this.state.show ? styles.showNavbar : styles.hideNavbar}>
-                        <div style={styles.NavBar}>
+                        <div style={this.props.responsive.NavBar}>
                             <Row>
                                 <Col span={8}>
                                     <Divider>
-                                        <Link activeClass="active" to="who" isDynamic={true} spy={true} smooth={true} duration={500} style={styles.SubtitleTwo}>
+                                        <Link activeClass="active" to="who" isDynamic={true} spy={true} smooth={true} duration={500} style={this.props.responsive.NavBarText}>
                                             who
                                     </Link>
                                     </Divider>
                                 </Col>
                                 <Col span={8}>
                                     <Divider>
-                                        <Link activeClass="active" to="work" isDynamic={true} spy={true} smooth={true} duration={500} style={styles.SubtitleTwo}>
+                                        <Link activeClass="active" to="work" isDynamic={true} spy={true} smooth={true} duration={500} style={this.props.responsive.NavBarText}>
                                             work
                                     </Link>
                                     </Divider>
                                 </Col>
                                 <Col span={8}>
                                     <Divider>
-                                        <Link activeClass="active" to="contact" isDynamic={true} spy={true} smooth={true} duration={500} style={styles.SubtitleTwo}>
+                                        <Link activeClass="active" to="contact" isDynamic={true} spy={true} smooth={true} duration={500} style={this.props.responsive.NavBarText}>
                                             contact
                                     </Link>
                                     </Divider>
