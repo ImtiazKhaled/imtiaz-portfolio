@@ -15,8 +15,8 @@ export class Contact extends React.Component {
             <Element name="contact" >
                 <div style={styles.ContactPage}>
                     <Divider orientation="right">
-                        <div style={styles.Subtitle}>
-                            Contact
+                        <div style={this.props.responsive.SubtitleTen}>
+                            contact
                     </div>
                     </Divider>
                     <div className='wow fadeInUp' data-wow-duration='1s' data-wow-iteration='1' style={styles.ContactInfo}>

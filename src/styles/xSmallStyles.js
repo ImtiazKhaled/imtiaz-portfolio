@@ -1,54 +1,65 @@
 import { colorThemes } from './colorThemes';
 
 export const stylesXS = {
-    showNavbar: {
-        visibility: 'visible',
-        transition: 'all 200ms ease-in',
-    },
-    hideNavbar: {
-        visibility: 'hidden',
-        transition: 'all 200ms ease-out',
-        transform: 'translate(0, -100)',
-    },
-    NavBar: {
-        backgroundColor: colorThemes.BackgroundDark,
-    },
     Title: {
         fontSize: '9vw',
         color: colorThemes.BackgroundAccentMain,
-        fontFamily: 'Play, sans-serif',
+        fontFamily: 'hack, sans-serif',
     },
     Subtitle: {
         fontSize: '4vw',
         color: colorThemes.BackgroundAccentTwo,
-        fontFamily: 'Play, sans-serif',
+        fontFamily: 'hack, sans-serif',
     },
     SubtitleTwo: {
         fontSize: '4vw',
         color: colorThemes.BackgroundAccentTwo,
-        fontFamily: 'Play, sans-serif',
+        fontFamily: 'hack, sans-serif',
     },
     SubtitleThree: {
         fontSize: '5vw',
         color: colorThemes.BackgroundAccentTwo,
-        fontFamily: 'Play, sans-serif',
+        fontFamily: 'hack, sans-serif',
     },
     SubtitleFour: {
-        fontSize: '7vw',
+        fontSize: '5vw',
         color: colorThemes.BackgroundAccent,
-        fontFamily: 'Play, sans-serif',
+        fontFamily: 'hack, sans-serif',
     },
     SubtitleFive: {
         fontSize: '7vw',
         color: colorThemes.BackgroundAccent,
-        fontFamily: 'Play, sans-serif',
+        fontFamily: 'hack, sans-serif',
+    },
+    SubtitleSix: {
+        fontSize: '6vw',
+        color: colorThemes.BackgroundAccent,
+        fontFamily: 'hack, sans-serif',
+    },
+    SubtitleSeven: {
+        fontSize: '5vw',
+        color: colorThemes.BackgroundAccentMain,
+        fontFamily: 'hack, sans-serif',
+    },
+    SubtitleEight: {
+        fontSize: '4vw',
+        color: colorThemes.BackgroundAccentThree,
+        fontFamily: 'hack, sans-serif',
+    },
+    SubtitleNine: {
+        fontSize: '4vw',
+        color: colorThemes.BackgroundAccentFour,
+        fontFamily: 'hack, sans-serif',
+    },
+    SubtitleTen: {
+        fontSize: '9vw',
+        color: colorThemes.BackgroundAccentMain,
+        fontFamily: 'hack, sans-serif',
     },
     ContactMeTag: {
         margin: '1vw',
         fontSize: '1.5vw',
-        // color: colorThemes.BackgroundAccentMain,
-        // fontFamily: 'Play, sans-serif',
-        fontFamily: 'Play, sans-serif',
+        fontFamily: 'hack, sans-serif',
         color: colorThemes.BackgroundAccent,
         backgroundColor: colorThemes.BackgroundAccentTwo,
     },
@@ -56,30 +67,34 @@ export const stylesXS = {
         minHeight: '100vh',
     },
     WhoTab: {
-        color: 'black',
+        // color: 'black',
+        padding: '3vw',
+    },
+    WorkTab: {
+        padding: '3vw',
     },
     WorkIcon: {
-        fontSize: '5vw',
+        fontSize: '20vw',
         color: colorThemes.BackgroundAccent,
     },
     WorkTitle: {
-        fontSize: '2vw',
-        fontFamily: 'Play, sans-serif',
-        color: colorThemes.BackgroundAccent,
+        fontSize: '7vw',
+        fontFamily: 'hack, sans-serif',
+        color: colorThemes.BackgroundAccentMain,
     },
     WorkSocialLink: {
-        fontSize: '2vw',
-        color: colorThemes.BackgroundAccent,
+        fontSize: '10vw',
+        color: colorThemes.BackgroundAccentThree,
     },
     WorkTags: {
-        fontFamily: 'Play, sans-serif',
+        fontFamily: 'hack, sans-serif',
         color: colorThemes.BackgroundAccenMain,
-        backgroundColor: colorThemes.BackgroundAccent,
+        backgroundColor: colorThemes.BackgroundAccentTwo,
     },
     WorkDetails: {
-        fontFamily: 'Play, sans-serif',
-        fontSize: '1vw',
-        color: colorThemes.BackgroundAccent,
+        fontFamily: 'hack, sans-serif',
+        fontSize: '4vw',
+        color: colorThemes.BackgroundAccentTwo,
     },
     Footer: {
         height: '10vh',
@@ -89,5 +104,6 @@ export const stylesXS = {
         textAlign: 'center',
         backgroundColor: colorThemes.Background,
     },
-    workColSize: 24,
+    WorkColSize: 24,
+    WhoTabPosition: 'top', 
 }

@@ -38,7 +38,7 @@ export class Structure extends React.Component {
                 <Row style={styles.Page}>
                     <TopBar />
                     <Landing responsive={this.props.responsive} />
-                    <Who />
+                    <Who responsive={this.props.responsive} />
                     <Work responsive={this.props.responsive} />
                     <Contact responsive={this.props.responsive} />
                     <Footer style={this.props.responsive.Footer}>Imtiaz Mujtaba Khaled ©2019</Footer>

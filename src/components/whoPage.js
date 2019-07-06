@@ -12,13 +12,15 @@ export class Who extends React.Component {
             <Element name='who'>
                 <div style={styles.MainPage}>
                     <Divider orientation="left">
-                        <div style={styles.Subtitle}>
-                            Who
+                        <div style={this.props.responsive.SubtitleTen}>
+                            who
                     </div>
                     </Divider>
-                    <Tabs style={styles.WhoTab} tabPosition={'left'}>
+                    <Tabs style={styles.Tab} tabPosition={this.props.responsive.WhoTabPosition}>
                         {who.map(who =>
-                            <TabPane tab={who.tabName} key={who.id}> <WhoDetails data={who.props} /> </TabPane>
+                            <TabPane tab={who.tabName} key={who.id}>
+                                <WhoDetails responsive={this.props.responsive} data={who.props} />
+                            </TabPane>
                         )}
                     </Tabs>
                 </div>

@@ -4,7 +4,7 @@ import { styles } from '../styles/styles';
 import { WorkDetails } from './workDetails';
 import { Element } from 'react-scroll';
 import { work } from '../data/work';
-const TabPane = Tabs.TabPane;
+const { TabPane } = Tabs;
 
 export class Work extends React.Component {
     render() {
@@ -12,14 +12,18 @@ export class Work extends React.Component {
             <Element name="work" >
                 <div style={styles.MainPage}>
                     <Divider>
-                        <div style={styles.Subtitle}>
-                            Work
-                    </div>
+                        <div style={this.props.responsive.SubtitleTen}>
+                            work
+                        </div>
                     </Divider>
                     <Row>
-                        {work.map(work =>
-                            <WorkDetails responsive={this.props.responsive} data={work} />
-                        )}
+                        <Tabs style={styles.Tab} tabPosition={this.props.responsive.WhoTabPosition}>
+                            {work.map(work =>
+                                <TabPane tab={work.title} key={work.id}>
+                                    <WorkDetails responsive={this.props.responsive} data={work} />
+                                </TabPane>
+                            )}
+                        </Tabs>
                     </Row>
                 </div>
             </Element>

@@ -23,71 +23,17 @@ export var styles = {
     Page: {
         background: 'linear-gradient(to bottom, ' + colorThemes.BackgroundDark + ', ' + colorThemes.Background,
     },
-    Title: {
-        fontSize: '3vw',
-        color: colorThemes.BackgroundAccentMain,
-        fontFamily: 'Play, sans-serif',
-    },
-    Subtitle: {
-        fontSize: '2vw',
-        color: colorThemes.BackgroundAccentMain,
-        fontFamily: 'Play, sans-serif',
-    },
-    SubtitleTwo: {
-        fontSize: '1.5vw',
-        color: colorThemes.BackgroundAccentMain,
-        fontFamily: 'Play, sans-serif',
-    },
-    SubtitleThree: {
-        fontSize: '1.5vw',
-        color: colorThemes.BackgroundAccent,
-        fontFamily: 'Play, sans-serif',
-    },
-    SubtitleFour: {
-        fontSize: '1vw',
-        color: colorThemes.BackgroundAccentTwo,
-        fontFamily: 'Play, sans-serif',
-    },
     ContactMeTag: {
         margin: '1vw',
         fontSize: '1.5vw',
-        // color: colorThemes.BackgroundAccentMain,
-        // fontFamily: 'Play, sans-serif',
-        fontFamily: 'Play, sans-serif',
+        fontFamily: 'hack, sans-serif',
         color: colorThemes.BackgroundAccent,
         backgroundColor: colorThemes.BackgroundAccentTwo,
-
     },
     MainPage: {
         minHeight: '100vh',
     },
-    WhoTab: {
-        color: 'black',
-    },
-    WorkCardContainer: {
-        backgroundColor: colorThemes.BackgroundAccent,
-    },
-    WorkIcon: {
-        fontSize: '5vw',
-        color: colorThemes.BackgroundAccentTwo,
-    },
-    WorkTitle: {
-        fontSize: '2vw',
-        fontFamily: 'Play, sans-serif',
-        color: colorThemes.BackgroundAccentTwo,
-    },
-    WorkSocialLink: {
-        fontSize: '2vw',
-        color: colorThemes.BackgroundAccentTwo,
-    },
-    WorkTags: {
-        fontFamily: 'Play, sans-serif',
-        color: colorThemes.BackgroundAccenMain,
-        backgroundColor: colorThemes.BackgroundAccentTwo,
-    },
-    WorkDetails: {
-        fontFamily: 'Play, sans-serif',
-        fontSize: '1vw',
+    Tab: {
         color: colorThemes.BackgroundAccentTwo,
     },
     ContactPage: {

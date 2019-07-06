@@ -26,14 +26,15 @@ export var colorThemes = {
     // workDetailsTitle: '#faed27',
     // workDetialsText: 'white',
 
-    Background: '#40e5e4',
-    BackgroundAccentMain: 'purple',
+    Background: '#011627',
+    BackgroundAccentMain: '#f78c6c',
     BackgroundMid: '#00cccc',
-    BackgroundDark: '#00c0c0',
+    BackgroundDark: '#011627',
     DetailsTitle: '#ca2c92',
-    BackgroundAccent: '#ffc0cb',
-    BackgroundAccentTwo: '#003153',
-
+    BackgroundAccent: '#22da6e',
+    BackgroundAccentTwo: '#637777',
+    BackgroundAccentThree: '#637777',
+    BackgroundAccentFour: '#575656', 
 }
 
 

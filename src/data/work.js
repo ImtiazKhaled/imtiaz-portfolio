@@ -31,7 +31,7 @@ export const work = [
         id: "3",
         type: "Personal Project",
         logo: fitnessLogo,
-        title: 'fitness-app',
+        title: 'finess',
         sourceCodeAvailable: true,
         websiteLinkAvailable: false,
         sourceCode: 'https://github.com/ImtiazKhaled/FitnessApp',
