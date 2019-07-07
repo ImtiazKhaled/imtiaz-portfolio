@@ -23,12 +23,10 @@ export var styles = {
     Page: {
         background: 'linear-gradient(to bottom, ' + colorThemes.BackgroundDark + ', ' + colorThemes.Background,
     },
-    ContactMeTag: {
-        margin: '1vw',
-        fontSize: '1.5vw',
+    WorkTags: {
         fontFamily: 'hack, sans-serif',
-        color: colorThemes.BackgroundAccent,
-        backgroundColor: colorThemes.BackgroundAccentTwo,
+        color: colorThemes.BackgroundAccentThree,
+        backgroundColor: 'transparent',
     },
     MainPage: {
         minHeight: '100vh',

@@ -75,23 +75,21 @@ export const stylesXL = {
         backgroundColor: 'transparent',
     },
     NavBar: {
+        margin: '1vw',
         backgroundColor: colorThemes.BackgroundDark,
     },
     NavBarText: {
         fontSize: '2vw',
         color: colorThemes.BackgroundAccentMain,
     },
-    MainPage: {
-        minHeight: '100vh',
-    },
     WhoTab: {
         width: '60vw',
-    },    
+    },
     WorkTab: {
         width: '60vw',
     },
     WorkIcon: {
-        fontSize: '5vw',        
+        fontSize: '5vw',
         color: colorThemes.BackgroundAccent,
     },
     WorkTitle: {
@@ -102,11 +100,6 @@ export const stylesXL = {
     WorkSocialLink: {
         fontSize: '2vw',
         color: colorThemes.BackgroundAccentThree,
-    },
-    WorkTags: {
-        fontFamily: 'hack, sans-serif',
-        color: colorThemes.BackgroundAccentThree,
-        backgroundColor: 'transparent',
     },
     WorkDetails: {
         fontFamily: 'hack, sans-serif',

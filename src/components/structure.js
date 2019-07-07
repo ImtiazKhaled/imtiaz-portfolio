@@ -8,7 +8,7 @@ import { Work } from './workPage';
 import { Contact } from './contactPage';
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-import { TopBar } from './topbar';
+import { NavBar } from './navBar';
 const { Title, Text } = Typography;
 const { Header, Footer } = Layout;
 
@@ -37,7 +37,7 @@ export class Structure extends React.Component {
             <div>
                 <Row style={styles.Page}>
                     <h1 style={{backgroundColor: 'white', color: 'black'}}>this website is still under construction, {this.props.responsive.indentifier}</h1>
-                    <TopBar responsive={this.props.responsive} />
+                    <NavBar responsive={this.props.responsive} />
                     <Landing responsive={this.props.responsive} />
                     <Who responsive={this.props.responsive} />
                     <Work responsive={this.props.responsive} />

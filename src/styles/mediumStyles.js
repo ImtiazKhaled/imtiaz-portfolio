@@ -75,6 +75,7 @@ export const stylesM = {
         backgroundColor: 'transparent',
     },
     NavBar: {
+        margin: '1vw',
         backgroundColor: colorThemes.BackgroundDark,
     },
     NavBarText: {
@@ -102,11 +103,6 @@ export const stylesM = {
     WorkSocialLink: {
         fontSize: '4vw',
         color: colorThemes.BackgroundAccentThree,
-    },
-    WorkTags: {
-        fontFamily: 'hack, sans-serif',
-        color: colorThemes.BackgroundAccenMain,
-        backgroundColor: colorThemes.BackgroundAccentTwo,
     },
     WorkDetails: {
         fontFamily: 'hack, sans-serif',

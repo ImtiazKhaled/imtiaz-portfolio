@@ -75,14 +75,12 @@ export const stylesL = {
         backgroundColor: 'transparent',
     },
     NavBar: {
+        margin: '1vw',
         backgroundColor: colorThemes.BackgroundDark,
     },
     NavBarText: {
         fontSize: '3vw',
         color: colorThemes.BackgroundAccentMain,
-    },
-    MainPage: {
-        minHeight: '100vh',
     },
     WhoTab: {
         width: '65vw',
@@ -102,11 +100,6 @@ export const stylesL = {
     WorkSocialLink: {
         fontSize: '3vw',
         color: colorThemes.BackgroundAccentThree,
-    },
-    WorkTags: {
-        fontFamily: 'hack, sans-serif',
-        color: colorThemes.BackgroundAccenMain,
-        backgroundColor: colorThemes.BackgroundAccentTwo,
     },
     WorkDetails: {
         fontFamily: 'hack, sans-serif',

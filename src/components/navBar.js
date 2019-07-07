@@ -12,7 +12,7 @@ const { Title, Text } = Typography;
 const { Header, Footer } = Layout;
 
 
-export class TopBar extends React.Component {
+export class NavBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {

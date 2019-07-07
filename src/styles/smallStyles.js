@@ -82,9 +82,6 @@ export const stylesS = {
         color: colorThemes.BackgroundAccent,
         backgroundColor: 'transparent',
     },
-    MainPage: {
-        minHeight: '100vh',
-    },
     WhoTab: {
         padding: '3vw',
     },
@@ -103,11 +100,6 @@ export const stylesS = {
     WorkSocialLink: {
         fontSize: '9vw',
         color: colorThemes.BackgroundAccentThree,
-    },
-    WorkTags: {
-        fontFamily: 'hack, sans-serif',
-        color: colorThemes.BackgroundAccenMain,
-        backgroundColor: colorThemes.BackgroundAccentTwo,
     },
     WorkDetails: {
         fontFamily: 'hack, sans-serif',

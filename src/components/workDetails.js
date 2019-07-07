@@ -31,7 +31,7 @@ export class WorkDetails extends React.Component {
                     </Row>
                     <Row><div className='wow fadeInUp' data-wow-duration='700ms' data-wow-iteration='1' data-wow-delay='300ms' style={this.props.responsive.WorkDetails}>{this.props.data.description}</div></Row>
                     <Row className='wow fadeInUp' data-wow-duration='700ms' data-wow-iteration='1' data-wow-delay='400ms'>
-                        {this.props.data.stack.map(stack => <Tag style={this.props.responsive.WorkTags}> {stack} </Tag>)}
+                        {this.props.data.stack.map(stack => <Tag style={styles.WorkTags}> {stack} </Tag>)}
                     </Row>
                 </div>
                 :
@@ -54,7 +54,7 @@ export class WorkDetails extends React.Component {
                     </Row>
                     <Row><div className='wow fadeInRight' data-wow-duration='700ms' data-wow-iteration='1' data-wow-delay='300ms' style={this.props.responsive.WorkDetails}>{this.props.data.description}</div></Row>
                     <Row className='wow fadeInRight' data-wow-duration='700ms' data-wow-iteration='1' data-wow-delay='400ms'>
-                        {this.props.data.stack.map(stack => <Tag style={this.props.responsive.WorkTags}> {stack} </Tag>)}
+                        {this.props.data.stack.map(stack => <Tag style={styles.WorkTags}> {stack} </Tag>)}
                     </Row>
                 </div>
         );
