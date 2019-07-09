@@ -39,4 +39,16 @@ export const work = [
         description: 'A flutter based phone application used to encourage users to workout more oftern by provding promotions in exchange of the user doing the predefined workout sets.',
         stack: ['flutter', 'nodeJS'],
     },
+    {
+        id: "4",
+        type: "Personal Project",
+        logo: fitnessLogo,
+        title: 'lockout tracker',
+        sourceCodeAvailable: true,
+        websiteLinkAvailable: false,
+        sourceCode: 'https://github.com/ImtiazKhaled/Lockout-Tracker',
+        websiteLink: '',
+        description: 'A website build to ease the process of dealing with lockouts at my current job. With the ability to add, filter and edit content at will, this provides a powerful tool automate the lockout',
+        stack: ['react', 'firebase'],
+    },
 ];
