@@ -103,6 +103,7 @@ export const stylesM = {
     WorkSocialLink: {
         fontSize: '4vw',
         color: colorThemes.BackgroundAccentThree,
+        margin: '2vw',
     },
     WorkDetails: {
         fontFamily: 'hack, sans-serif',

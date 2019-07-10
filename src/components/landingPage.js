@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Tag } from 'antd';
+import { Tag } from 'antd';
 import { styles } from '../styles/styles';
 import { emailto } from '../data/emailto';
 import WOW from 'wowjs';

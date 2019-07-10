@@ -1,12 +1,12 @@
-import edunateLogo from '../assets/edunate_logo.png';
-import subbeyLogo from '../assets/subbey_logo.png';
-import fitnessLogo from '../assets/fitness_logo.png';
+// import edunateLogo from '../assets/edunate_logo.png';
+// import subbeyLogo from '../assets/subbey_logo.png';
+// import fitnessLogo from '../assets/fitness_logo.png';
 
 export const work = [
     {
         id: "1",
         type: "Personal Project",
-        logo: edunateLogo,
+        // logo: edunateLogo,
         title: 'edunate',
         sourceCodeAvailable: true,
         websiteLinkAvailable: true,
@@ -16,9 +16,33 @@ export const work = [
         stack: ['reactJS', 'nodeJS'],
     },
     {
+        id: "4",
+        type: "Personal Project",
+        // logo: fitnessLogo,
+        title: 'lockout tracker',
+        sourceCodeAvailable: true,
+        websiteLinkAvailable: true,
+        sourceCode: 'https://github.com/ImtiazKhaled/lockout-tracker',
+        websiteLink: 'https://imtiazkhaled.github.io/lockout-tracker',
+        description: 'A website build to ease the process of dealing with lockouts at my current job. With the ability to add, filter and edit content at will, this provides a powerful tool automate the lockout',
+        stack: ['react', 'firebase'],
+    },
+    {
+        id: "5",
+        type: "Personal Project",
+        // logo: fitnessLogo,
+        title: 'this website',
+        sourceCodeAvailable: true,
+        websiteLinkAvailable: true,
+        sourceCode: 'https://github.com/ImtiazKhaled/imtiaz-portfolio',
+        websiteLink: 'https://imtiazkhaled.github.io/imtiaz-portfolio',
+        description: 'A responsive website I build to house my porfolio on the web. I utilized subtle animations to bring descriptions into attention.',
+        stack: ['react'],
+    },
+    {
         id: "2",
         type: "Personal Project",
-        logo: subbeyLogo,
+        // logo: subbeyLogo,
         title: 'subbey',
         sourceCodeAvailable: true,
         websiteLinkAvailable: false,
@@ -30,7 +54,7 @@ export const work = [
     {
         id: "3",
         type: "Personal Project",
-        logo: fitnessLogo,
+        // logo: fitnessLogo,
         title: 'finess',
         sourceCodeAvailable: true,
         websiteLinkAvailable: false,
@@ -38,17 +62,5 @@ export const work = [
         websiteLink: 'http://www.edunate.org/',
         description: 'A flutter based phone application used to encourage users to workout more oftern by provding promotions in exchange of the user doing the predefined workout sets.',
         stack: ['flutter', 'nodeJS'],
-    },
-    {
-        id: "4",
-        type: "Personal Project",
-        logo: fitnessLogo,
-        title: 'lockout tracker',
-        sourceCodeAvailable: true,
-        websiteLinkAvailable: false,
-        sourceCode: 'https://github.com/ImtiazKhaled/Lockout-Tracker',
-        websiteLink: '',
-        description: 'A website build to ease the process of dealing with lockouts at my current job. With the ability to add, filter and edit content at will, this provides a powerful tool automate the lockout',
-        stack: ['react', 'firebase'],
     },
 ];
