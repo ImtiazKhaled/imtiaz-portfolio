@@ -117,5 +117,9 @@ export const stylesXS = {
     },
     WhoTabPosition: 'top', 
     TopBar: true,
-    AnimationUp: false,
+    Animation: {
+        className: 'wow fadeInRight', 
+        dataWowDuration: '700ms', 
+        dataWowIteration: '1'
+    }
 }

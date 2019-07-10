@@ -117,5 +117,9 @@ export const stylesXL = {
     },
     WhoTabPosition: 'left',
     TopBar: false,
-    AnimationUp: true,
+    Animation: {
+        className: 'wow fadeInUp', 
+        dataWowDuration: '700ms', 
+        dataWowIteration: '1'
+    }
 }
