@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tag } from 'antd';
 import { styles } from '../styles/styles';
-import { emailto } from '../data/emailto';
+import { emailto } from '../data/links';
 import WOW from 'wowjs';
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs, Divider, Row, Col } from 'antd';
+import { Tabs, Divider, Row } from 'antd';
 import { styles } from '../styles/styles';
 import { WorkDetails } from './workDetails';
 import { Element } from 'react-scroll';

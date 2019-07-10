@@ -1,15 +1,8 @@
 import React from 'react';
-import { Typography, Row, Col, Layout, Button, Divider, Affix, Modal, Tag } from 'antd';
+import { Row, Button, Divider, Affix, Modal, Tag } from 'antd';
 import { styles } from '../styles/styles';
 import WOW from 'wowjs';
-import { Landing } from './landingPage';
-import { Who } from './whoPage';
-import { Work } from './workPage';
-import { Contact } from './contactPage';
-import * as Scroll from 'react-scroll';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-const { Title, Text } = Typography;
-const { Header, Footer } = Layout;
+import { Link, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 
 export class NavBar extends React.Component {

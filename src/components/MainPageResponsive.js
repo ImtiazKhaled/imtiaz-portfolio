@@ -1,12 +1,8 @@
 import React from 'react';
-import { Typography, Row, Col, Layout } from 'antd';
+import { Layout } from 'antd';
 import Breakpoint from 'react-socks';
-// import { Structure } from './structure';
 import { Structure } from './structure';
-import { colorThemes } from '../styles/colorThemes';
 import { responsive } from '../data/responsive';
-const { Title } = Typography;
-const { Header, Footer } = Layout;
 
 
 export default class WorkPageResponsive extends React.Component {

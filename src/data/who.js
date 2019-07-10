@@ -33,9 +33,7 @@ export const who = [
         tabName: 'Hackthon Enthusiast',
         props: {
             title: 'Hackthon Enthusiast',
-            subtitle: '@blutech Solutions',
-            subtitleLink: 'https://bluetechbd.com/',
-            duration: 'may 2019 - june 2019',
+            duration: 'forever and always',
             description: [
                 '',
                 'nodeJS'
@@ -47,9 +45,9 @@ export const who = [
         tabName: 'and many more..',
         props: {
             title: 'Hobbyist',
-            duration: 'forever and always',
+            duration: 'also forever and always',
             description: [
-                '',
+                'I enjoy playing games',
                 'nodeJS'
             ],
         },

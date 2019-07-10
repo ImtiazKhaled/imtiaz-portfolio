@@ -1,16 +1,14 @@
 import React from 'react';
-import { Typography, Row, Col, Layout, Button, Divider } from 'antd';
+import { Row, Layout } from 'antd';
 import { styles } from '../styles/styles';
 import WOW from 'wowjs';
 import { Landing } from './landingPage';
 import { Who } from './whoPage';
 import { Work } from './workPage';
 import { Contact } from './contactPage';
-import * as Scroll from 'react-scroll';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import { NavBar } from './navBar';
-const { Title, Text } = Typography;
-const { Header, Footer } = Layout;
+const { Footer } = Layout;
 
 
 export class Structure extends React.Component {

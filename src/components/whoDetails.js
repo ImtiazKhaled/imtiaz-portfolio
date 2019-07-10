@@ -2,7 +2,6 @@ import React from 'react';
 import WOW from 'wowjs';
 
 
-
 export class WhoDetails extends React.Component {
     componentDidMount() {
         new WOW.WOW().init();

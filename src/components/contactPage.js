@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button, Divider } from 'antd';
+import { Divider } from 'antd';
 import { styles } from '../styles/styles';
-import { emailto } from '../data/emailto';
+import { emailto } from '../data/links';
 import { Element } from 'react-scroll';
 import WOW from 'wowjs';
 

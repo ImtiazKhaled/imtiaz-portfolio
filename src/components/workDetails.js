@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Tag, Icon } from 'antd';
+import { Row, Tag } from 'antd';
 import { styles } from '../styles/styles';
 import WOW from 'wowjs';
 import { GithubIcon, DevpostIcon, WebsiteIcon, CustomIcons } from '../assets/customIcons';

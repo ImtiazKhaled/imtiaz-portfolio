@@ -167,19 +167,14 @@ export class CustomIcons extends React.Component {
       switch(this.props.type) {
          case 'edunate':
             return <EdunateIcon IconStyles={this.props.IconStyles} />;
-            break;
             case 'finess':
             return <FinessIcon IconStyles={this.props.IconStyles} />;
-            break;
             case 'subbey':
             return <SubbeyIcon IconStyles={this.props.IconStyles} />;
-            break;
             case 'lockout':
             return <LockoutIcon IconStyles={this.props.IconStyles} />;
-            break;
             case 'me':
             return <MeIcon IconStyles={this.props.IconStyles} />;
-            break;
             default:
             return <Icon type='folder' style={this.props.IconStyles} />;
       }
