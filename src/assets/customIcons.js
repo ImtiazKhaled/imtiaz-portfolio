@@ -161,3 +161,28 @@ export const MeIcon = props => <Icon style={props.IconStyles} component={() => <
 export const WebsiteIcon = props => <Icon component={() => <WebsiteSvg fontSize={props.IconStyles.fontSize} fill={props.IconStyles.color}/>}/>;
 export const SubbeyIcon = props => <Icon type='bar-chart' style={props.IconStyles} />;
 export const LockoutIcon = props => <Icon type='key' style={props.IconStyles} />;
+
+export class CustomIcons extends React.Component {
+   render() {
+      switch(this.props.type) {
+         case 'edunate':
+            return <EdunateIcon IconStyles={this.props.IconStyles} />;
+            break;
+            case 'finess':
+            return <FinessIcon IconStyles={this.props.IconStyles} />;
+            break;
+            case 'subbey':
+            return <SubbeyIcon IconStyles={this.props.IconStyles} />;
+            break;
+            case 'lockout':
+            return <LockoutIcon IconStyles={this.props.IconStyles} />;
+            break;
+            case 'me':
+            return <MeIcon IconStyles={this.props.IconStyles} />;
+            break;
+            default:
+            return <Icon type='folder' style={this.props.IconStyles} />;
+      }
+   }
+}
+   

@@ -92,7 +92,7 @@ export const stylesM = {
         width: '80vw',
     },
     WorkIcon: {
-        fontSize: '7vw',        
+        fontSize: '15vw',        
         color: colorThemes.BackgroundAccent,
     },
     WorkTitle: {

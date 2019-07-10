@@ -89,7 +89,7 @@ export const stylesXL = {
         width: '60vw',
     },
     WorkIcon: {
-        fontSize: '5vw',
+        fontSize: '9vw',
         color: colorThemes.BackgroundAccent,
     },
     WorkTitle: {

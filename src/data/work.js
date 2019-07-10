@@ -6,7 +6,7 @@ export const work = [
     {
         id: "1",
         type: "Personal Project",
-        // logo: edunateLogo,
+        logo: 'edunate',
         title: 'edunate',
         sourceCodeAvailable: true,
         sourceCode: 'https://github.com/ImtiazKhaled/edunate',
@@ -20,7 +20,7 @@ export const work = [
     {
         id: "4",
         type: "Personal Project",
-        // logo: fitnessLogo,
+        logo: 'lockout',
         title: 'lockout tracker',
         sourceCodeAvailable: true,
         sourceCode: 'https://github.com/ImtiazKhaled/lockout-tracker',
@@ -34,7 +34,7 @@ export const work = [
     {
         id: "5",
         type: "Personal Project",
-        // logo: fitnessLogo,
+        logo: 'me',
         title: 'this website',
         sourceCodeAvailable: true,
         sourceCode: 'https://github.com/ImtiazKhaled/imtiaz-portfolio',
@@ -48,7 +48,7 @@ export const work = [
     {
         id: "2",
         type: "Personal Project",
-        // logo: subbeyLogo,
+        logo: 'subbey',
         title: 'subbey',
         sourceCodeAvailable: true,
         sourceCode: 'https://github.com/ImtiazKhaled/edunate',
@@ -62,7 +62,7 @@ export const work = [
     {
         id: "3",
         type: "Personal Project",
-        // logo: fitnessLogo,
+        logo: 'finess',
         title: 'finess',
         sourceCodeAvailable: true,
         sourceCode: 'https://github.com/ImtiazKhaled/FitnessApp',

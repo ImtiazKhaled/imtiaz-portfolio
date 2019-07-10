@@ -89,7 +89,7 @@ export const stylesXS = {
         padding: '3vw',
     },
     WorkIcon: {
-        fontSize: '20vw',
+        fontSize: '30vw',
         color: colorThemes.BackgroundAccent,
     },
     WorkTitle: {

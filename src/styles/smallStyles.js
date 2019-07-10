@@ -89,7 +89,7 @@ export const stylesS = {
         padding: '2vw',
     },
     WorkIcon: {
-        fontSize: '15vw',
+        fontSize: '25vw',
         color: colorThemes.BackgroundAccent,
     },
     WorkTitle: {
