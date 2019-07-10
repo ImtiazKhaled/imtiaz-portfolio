@@ -1,9 +1,8 @@
 import React from 'react';
-import { Card, Col, Row, Tag, Typography, Icon } from 'antd';
+import { Row, Tag, Icon } from 'antd';
 import { styles } from '../styles/styles';
 import WOW from 'wowjs';
-const { Title } = Typography;
-
+import { GithubIcon, DevpostIcon, WebsiteIcon, LockoutIcon } from '../assets/customIcons';
 
 export class WorkDetails extends React.Component {
     componentDidMount() {
@@ -16,17 +15,29 @@ export class WorkDetails extends React.Component {
             <div style={this.props.responsive.WorkTab}>
                 <div {...this.props.responsive.Animation}> <Icon style={this.props.responsive.WorkIcon} type="folder" /></div>
                 <div {...this.props.responsive.Animation} data-wow-delay='100ms' style={this.props.responsive.WorkTitle}> {this.props.data.title}</div>
-                <Row {...this.props.responsive.Animation} data-wow-delay='200ms'>
+                <Row {...this.props.responsive.Animation} data-wow-delay='200ms' style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
                     {this.props.data.sourceCodeAvailable ?
-                        <a href={this.props.data.sourceCode}>
-                            <Icon style={this.props.responsive.WorkSocialLink} type="github" />
-                        </a>
+                        <div>
+                            <a href={this.props.data.sourceCode}>
+                                <GithubIcon IconStyles={this.props.responsive.WorkSocialLink} />
+                            </a>
+                        </div>
                         :
                         <div></div>}
                     {this.props.data.websiteLinkAvailable ?
-                        <a href={this.props.data.websiteLink}>
-                            <Icon style={this.props.responsive.WorkSocialLink} type="menu" />
-                        </a>
+                        <div>
+                            <a href={this.props.data.websiteLink}>
+                                <WebsiteIcon IconStyles={this.props.responsive.WorkSocialLink} />
+                            </a>
+                        </div>
+                        :
+                        <div></div>}
+                    {this.props.data.devpostCodeAvailable ?
+                        <div>
+                            <a href={this.props.data.websiteLink}>
+                                <DevpostIcon IconStyles={this.props.responsive.WorkSocialLink} />
+                            </a>
+                        </div>
                         :
                         <div></div>}
                 </Row>
