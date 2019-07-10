@@ -20,6 +20,11 @@ export var styles = {
     NavBarColor: {
         backgroundColor: colorThemes.Background,
     },
+    WorkIconContainer: {
+        display: 'flex', 
+        flexDirection: 'row', 
+        alignItems: 'center'
+    },
     Page: {
         background: 'linear-gradient(to bottom, ' + colorThemes.BackgroundDark + ', ' + colorThemes.Background,
     },

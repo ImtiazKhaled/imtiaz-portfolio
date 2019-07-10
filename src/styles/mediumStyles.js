@@ -82,6 +82,10 @@ export const stylesM = {
         fontSize: '3vw',
         color: colorThemes.BackgroundAccentMain,
     },
+    NavBarIcon: {
+        fontSize: '6vw',
+        color: colorThemes.BackgroundAccentMain,
+    },
     MainPage: {
         minHeight: '100vh',
     },

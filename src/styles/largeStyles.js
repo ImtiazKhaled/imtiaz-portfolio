@@ -82,6 +82,10 @@ export const stylesL = {
         fontSize: '3vw',
         color: colorThemes.BackgroundAccentMain,
     },
+    NavBarIcon: {
+        fontSize: '4vw',
+        color: colorThemes.BackgroundAccentMain,
+    },
     WhoTab: {
         width: '65vw',
     },    

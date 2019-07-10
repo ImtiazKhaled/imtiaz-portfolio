@@ -74,6 +74,10 @@ export const stylesS = {
         fontSize: '8vw',
         color: colorThemes.BackgroundAccentMain,
     },
+    NavBarIcon: {
+        fontSize: '8vw',
+        color: colorThemes.BackgroundAccentMain,
+    },
     ContactMeTag: {
         margin: '1vw',
         padding: '2vw',

@@ -15,7 +15,7 @@ export class WorkDetails extends React.Component {
             <div style={this.props.responsive.WorkTab}>
                 <div {...this.props.responsive.Animation}> <CustomIcons type={this.props.data.logo} IconStyles={this.props.responsive.WorkIcon} /></div>
                 <div {...this.props.responsive.Animation} data-wow-delay='100ms' style={this.props.responsive.WorkTitle}> {this.props.data.title}</div>
-                <Row {...this.props.responsive.Animation} data-wow-delay='200ms' style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+                <Row {...this.props.responsive.Animation} data-wow-delay='200ms' style={styles.WorkIconContainer}>
                     {this.props.data.sourceCodeAvailable ?
                         <div>
                             <a href={this.props.data.sourceCode}>

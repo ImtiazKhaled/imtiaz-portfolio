@@ -3,6 +3,7 @@ import { Row, Button, Divider, Affix, Modal, Tag } from 'antd';
 import { styles } from '../styles/styles';
 import WOW from 'wowjs';
 import { Link, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import SocialLink from './socialLinks';
 
 
 export class NavBar extends React.Component {
@@ -57,7 +58,7 @@ export class NavBar extends React.Component {
                 <div>
                     <Affix offsetTop={20} style={styles.menuButtonLanding} >
                         <div>
-                            <Button style={this.props.responsive.NavBar} type='link' shape='circle' icon='menu' size='large' onClick={this.openMenu} />
+                            <Button style={styles.NavBar} type='link' shape='circle' icon='menu' size='large' onClick={this.openMenu} />
                         </div>
                     </Affix>
                     <Modal
@@ -90,12 +91,15 @@ export class NavBar extends React.Component {
                                 <Tag style={this.props.responsive.ContactMeTag}>Resume</Tag>
                             </a>
                         </Row>
+                        <Row>
+                            <SocialLink IconStyles={this.props.responsive.NavBarIcon} />
+                        </Row>
                     </Modal>
                 </div>
                 :
                 <div>
                     <Affix style={this.state.show ? styles.showNavbar : styles.hideNavbar}>
-                        <div style={this.props.responsive.NavBar}>
+                        <div style={styles.NavBar}>
                             <Link activeClass="active" to="who" isDynamic={true} spy={true} smooth={true} duration={500} style={this.props.responsive.NavBarText}>
                                 who
                             </Link>
@@ -110,6 +114,9 @@ export class NavBar extends React.Component {
                             <a href='https://drive.google.com/uc?export=download&id=1K7ron4NnobQEof6Wccj1W8QMn3aB0dyO'>
                                 <Tag style={this.props.responsive.ContactMeTag}>Resume</Tag>
                             </a>
+                            <div style={{textAlign: 'right'}}>
+                                <SocialLink IconStyles={this.props.responsive.NavBarIcon} />
+                            </div>
                         </div>
                     </Affix>
                 </div>
