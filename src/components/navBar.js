@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Button, Divider, Affix, Modal, Tag, Col, Menu } from 'antd';
+import { Row, Button, Affix, Modal, Tag, Menu } from 'antd';
 import { styles } from '../styles/styles';
 import WOW from 'wowjs';
 import { Link, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';

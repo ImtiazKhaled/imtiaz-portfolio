@@ -1,8 +1,8 @@
 import React from 'react';
 import { GithubIcon, LinkedInIcon, DevpostIcon } from '../assets/customIcons';
 import { githubLink, linkedInLink, devpostLink } from '../data/links';
-import { Row, Button, Divider, Affix, Modal, Tag, Col, Menu } from 'antd';
-import { Link, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import { Tag } from 'antd';
+import { Link } from 'react-scroll';
 
 
 export const WhoLink = props =>
