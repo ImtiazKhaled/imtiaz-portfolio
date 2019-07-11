@@ -69,19 +69,19 @@ export const stylesS = {
     NavBar: {
         fontSize: '5vw',
         color: colorThemes.BackgroundAccentMain,
+        backgroundColor: colorThemes.Background,
     },
     NavBarText: {
-        fontSize: '8vw',
+        fontSize: '5vw',
         color: colorThemes.BackgroundAccentMain,
     },
     NavBarIcon: {
-        fontSize: '8vw',
+        fontSize: '6vw',
         color: colorThemes.BackgroundAccentMain,
     },
     ContactMeTag: {
-        margin: '1vw',
-        padding: '2vw',
-        fontSize: '5vw',
+        padding: '1vw',
+        fontSize: '3vw',
         fontFamily: 'hack, sans-serif',
         color: colorThemes.BackgroundAccent,
         backgroundColor: 'transparent',

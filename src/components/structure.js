@@ -34,7 +34,6 @@ export class Structure extends React.Component {
         return (
             <div>
                 <Row style={styles.Page}>
-                    <h1 style={{backgroundColor: 'white', color: 'black'}}>this website is still under construction, {this.props.responsive.indentifier}</h1>
                     <NavBar responsive={this.props.responsive} />
                     <Landing responsive={this.props.responsive} />
                     <Who responsive={this.props.responsive} />

@@ -20,6 +20,15 @@ export var styles = {
     NavBarColor: {
         backgroundColor: colorThemes.Background,
     },
+    NavBarText: {
+        fontColor: colorThemes.BackgroundAccent,
+    },
+    NavBarLinks: {
+        display: 'flex', 
+        flexDirection: 'row', 
+        justifyContent: 'center',
+        color: colorThemes.BackgroundAccent,
+    },
     WorkIconContainer: {
         display: 'flex', 
         flexDirection: 'row', 

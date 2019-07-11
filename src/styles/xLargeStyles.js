@@ -75,7 +75,7 @@ export const stylesXL = {
         backgroundColor: 'transparent',
     },
     NavBar: {
-        margin: '1vw',
+        position: 'sticky',
         backgroundColor: colorThemes.BackgroundDark,
     },
     NavBarText: {

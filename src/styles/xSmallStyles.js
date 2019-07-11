@@ -69,13 +69,14 @@ export const stylesXS = {
     NavBar: {
         fontSize: '5vw',
         color: colorThemes.BackgroundAccentMain,
+        backgroundColor: colorThemes.Background,
     },
     NavBarText: {
         fontSize: '8vw',
         color: colorThemes.BackgroundAccentMain,
     },
     NavBarIcon: {
-        fontSize: '9vw',
+        fontSize: '7vw',
         color: colorThemes.BackgroundAccentMain,
     },
     ContactMeTag: {

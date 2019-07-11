@@ -1,9 +1,9 @@
 import React from 'react';
-import { Row, Button, Divider, Affix, Modal, Tag } from 'antd';
+import { Row, Button, Divider, Affix, Modal, Tag, Col, Menu } from 'antd';
 import { styles } from '../styles/styles';
 import WOW from 'wowjs';
 import { Link, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
-import SocialLink from './socialLinks';
+import { WhoLink, WorkLink, ContactLink, ResumeLink, GithubLink, LinkedInLink, DevpostLink } from '../data/navBarLinks'
 
 
 export class NavBar extends React.Component {
@@ -55,10 +55,10 @@ export class NavBar extends React.Component {
     render() {
         return (
             this.props.responsive.TopBar ?
-                <div>
+                <div style={{ paddingLeft: '2vw' }}>
                     <Affix offsetTop={20} style={styles.menuButtonLanding} >
                         <div>
-                            <Button style={styles.NavBar} type='link' shape='circle' icon='menu' size='large' onClick={this.openMenu} />
+                            <Button style={this.props.responsive.NavBar} type='link' shape='circle' icon='menu' size='large' onClick={this.openMenu} />
                         </div>
                     </Affix>
                     <Modal
@@ -91,35 +91,48 @@ export class NavBar extends React.Component {
                                 <Tag style={this.props.responsive.ContactMeTag}>Resume</Tag>
                             </a>
                         </Row>
-                        <Row>
-                            <SocialLink IconStyles={this.props.responsive.NavBarIcon} />
+                        <Row style={styles.NavBarLinks}>
+                        <p style={styles.NavBarLinks}>Contact me at</p>
+                        </Row>
+                        <Row style={styles.NavBarLinks}>
+                            <div style={{margin: '1vw'}}>
+                            <GithubLink responsive={this.props.responsive} />
+                            </div>
+                            <div style={{margin: '1vw'}}>
+                            <LinkedInLink responsive={this.props.responsive} />
+                            </div>
+                            <div style={{margin: '1vw'}}>
+                            <DevpostLink responsive={this.props.responsive} />
+                            </div>
                         </Row>
                     </Modal>
                 </div>
                 :
-                <div>
-                    <Affix style={this.state.show ? styles.showNavbar : styles.hideNavbar}>
-                        <div style={styles.NavBar}>
-                            <Link activeClass="active" to="who" isDynamic={true} spy={true} smooth={true} duration={500} style={this.props.responsive.NavBarText}>
-                                who
-                            </Link>
-                            <Divider type="vertical" />
-                            <Link activeClass="active" to="work" isDynamic={true} spy={true} smooth={true} duration={500} style={this.props.responsive.NavBarText}>
-                                work
-                            </Link>
-                            <Divider type="vertical" />
-                            <Link activeClass="active" to="contact" isDynamic={true} spy={true} smooth={true} duration={500} style={this.props.responsive.NavBarText}>
-                                contact
-                            </Link>
-                            <a href='https://drive.google.com/uc?export=download&id=1K7ron4NnobQEof6Wccj1W8QMn3aB0dyO'>
-                                <Tag style={this.props.responsive.ContactMeTag}>Resume</Tag>
-                            </a>
-                            <div style={{textAlign: 'right'}}>
-                                <SocialLink IconStyles={this.props.responsive.NavBarIcon} />
-                            </div>
-                        </div>
-                    </Affix>
-                </div>
+                <Affix>
+                    <Menu style={this.props.responsive.NavBar} mode="horizontal">
+                        <Menu.Item key='who'>
+                            <WhoLink responsive={this.props.responsive} />
+                        </Menu.Item>
+                        <Menu.Item key='work'>
+                            <WorkLink responsive={this.props.responsive} />
+                        </Menu.Item>
+                        <Menu.Item key='contact'>
+                            <ContactLink responsive={this.props.responsive} />
+                        </Menu.Item>
+                        <Menu.Item key='resume'>
+                            <ResumeLink responsive={this.props.responsive} />
+                        </Menu.Item>
+                        <Menu.Item key='github'>
+                            <GithubLink responsive={this.props.responsive} />
+                        </Menu.Item>
+                        <Menu.Item key='linkedin'>
+                            <LinkedInLink responsive={this.props.responsive} />
+                        </Menu.Item>
+                        <Menu.Item key='devpost'>
+                            <DevpostLink responsive={this.props.responsive} />
+                        </Menu.Item>
+                    </Menu>
+                </Affix>
         );
     }
 }
