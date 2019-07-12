@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/imtiaz-portfolio/static/css/main.68834847.chunk.css",
-    "main.js": "/imtiaz-portfolio/static/js/main.da5a6098.chunk.js",
-    "main.js.map": "/imtiaz-portfolio/static/js/main.da5a6098.chunk.js.map",
-    "runtime~main.js": "/imtiaz-portfolio/static/js/runtime~main.ae6c293e.js",
-    "runtime~main.js.map": "/imtiaz-portfolio/static/js/runtime~main.ae6c293e.js.map",
-    "static/css/2.39bbabe8.chunk.css": "/imtiaz-portfolio/static/css/2.39bbabe8.chunk.css",
-    "static/js/2.86744420.chunk.js": "/imtiaz-portfolio/static/js/2.86744420.chunk.js",
-    "static/js/2.86744420.chunk.js.map": "/imtiaz-portfolio/static/js/2.86744420.chunk.js.map",
-    "index.html": "/imtiaz-portfolio/index.html",
-    "precache-manifest.8565237f395ed4c7cc84d027b9afa88a.js": "/imtiaz-portfolio/precache-manifest.8565237f395ed4c7cc84d027b9afa88a.js",
-    "service-worker.js": "/imtiaz-portfolio/service-worker.js",
-    "static/css/2.39bbabe8.chunk.css.map": "/imtiaz-portfolio/static/css/2.39bbabe8.chunk.css.map",
-    "static/css/main.68834847.chunk.css.map": "/imtiaz-portfolio/static/css/main.68834847.chunk.css.map"
+    "main.css": "/my-portfolio/static/css/main.68834847.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.f9504807.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.f9504807.chunk.js.map",
+    "runtime~main.js": "/my-portfolio/static/js/runtime~main.674e5ed7.js",
+    "runtime~main.js.map": "/my-portfolio/static/js/runtime~main.674e5ed7.js.map",
+    "static/css/2.39bbabe8.chunk.css": "/my-portfolio/static/css/2.39bbabe8.chunk.css",
+    "static/js/2.2f625587.chunk.js": "/my-portfolio/static/js/2.2f625587.chunk.js",
+    "static/js/2.2f625587.chunk.js.map": "/my-portfolio/static/js/2.2f625587.chunk.js.map",
+    "index.html": "/my-portfolio/index.html",
+    "precache-manifest.aabd93d11fe571d169996b6b3203f195.js": "/my-portfolio/precache-manifest.aabd93d11fe571d169996b6b3203f195.js",
+    "service-worker.js": "/my-portfolio/service-worker.js",
+    "static/css/2.39bbabe8.chunk.css.map": "/my-portfolio/static/css/2.39bbabe8.chunk.css.map",
+    "static/css/main.68834847.chunk.css.map": "/my-portfolio/static/css/main.68834847.chunk.css.map"
   }
 }
