@@ -1,6 +1,5 @@
 {
-  "homepage": "http://ImtiazKhaled.github.io/imtiaz-portfolio",
-  "name": "imtiaz-portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
