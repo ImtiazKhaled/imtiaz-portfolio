@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import  WorkPageResponsive  from './components/mainPageResponsive';
+import  WorkPageResponsive  from './components/MainPageResponsive';
 import { BreakpointProvider } from 'react-socks';
 
 function App() {

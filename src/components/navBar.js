@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Button, Affix, Modal, Tag, Menu } from 'antd';
 import { styles } from '../styles/styles';
 import WOW from 'wowjs';
-import { Link, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import { Link, Events, scrollSpy } from 'react-scroll';
 import { WhoLink, WorkLink, ContactLink, ResumeLink, GithubLink, LinkedInLink, DevpostLink } from '../data/navBarLinks'
 
 
